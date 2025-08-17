@@ -55,36 +55,45 @@ ul {
   padding: 24px 0;
   border-bottom: 1px solid #ECECEC;
 }
-.logo {
-  font-family: 'Raleway', sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  color: #000;
-}
-.logo span {
-  color: #2196F3;
-}
-.header{
+
+.header-div-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+
+.logo {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  color: var(--black-color);
+}
+
+.logo span {
+  color: var(--accent-color);
+}
+
 .nav-list {
   display: flex;
   gap: 40px;
 }
+
 .nav-link {
-  color: #212121;
+  color: var(--primary-text-color);
   font-weight: 500;
+  transition: color 0.3s;
 }
-.nav-link.current {
-  color: #2196F3;
+
+.nav-link.current,
+.nav-link:hover {
+  color: var(--accent-color);
 }
+
 .contacts {
   display: flex;
   gap: 40px;
   font-size: 14px;
-  color: #757575;
+  color: var(--secondary-text-color);
 }
 
 /* Hero */
@@ -141,5 +150,6 @@ ul {
   color: rgba(255, 255, 255, 0.6);
   font-style: normal;
 }
+
 
 
