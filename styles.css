@@ -44,12 +44,6 @@ a {
 ul {
   list-style: none;
 }
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 15px;
-}
-
 /* Header */
 .header {
   padding: 24px 0;
@@ -150,6 +144,7 @@ ul {
   color: rgba(255, 255, 255, 0.6);
   font-style: normal;
 }
+
 
 
 
