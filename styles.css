@@ -65,7 +65,7 @@ ul {
 }
 
 .header-div {
-  display: flex;                 /* FLEX */
+  display: flex;                
   justify-content: space-between;
   align-items: center;
 }
@@ -81,7 +81,7 @@ ul {
 }
 
 .nav-list {
-  display: flex;                 /* FLEX */
+  display: flex;              
   gap: 40px;
 }
 
@@ -102,13 +102,51 @@ ul {
   color: var(--secondary-text-color);
 }
 
+.features-list {
+  display: flex;
+  justify-content: space-between; 
+  gap: 30px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.features-list-li {
+  flex: 1; 
+  text-align: center;
+}
+
+
+
+.team-container {
+  display: flex;
+  justify-content: space-between; 
+  gap: 30px; 
+  flex-wrap: wrap; 
+}
+
+.team-member {
+  flex: 1 1 250px; 
+  max-width: 280px;
+  text-align: center;
+  background: #f5f5f5;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.team-member img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+}
+
 /* Hero */
 .hero {
   background-color: #2F303A;
   color: #fff;
   padding: 120px 0;
   text-align: center;
-  display: flex;                 /* FLEX */
+  display: flex;             
   justify-content: center;
   align-items: center;
   flex-direction: column;
@@ -131,13 +169,12 @@ ul {
   cursor: pointer;
 }
 
-/* Features */
+
 .features-list {
-  display: flex;                 /* FLEX */
-  gap: 30px;
+  display: flex;            
 }
 .features-list-li {
-  flex: 1;                       /* рівний розподіл */
+  flex: 1;                   
 }
 .feature-title {
   font-weight: 700;
@@ -157,12 +194,12 @@ ul {
   padding: 60px 0;
 }
 .foot {
-  display: flex;                 /* FLEX */
+  display: flex;              
   flex-direction: column;
   gap: 20px;
 }
 .footer-contacts {
-  display: flex;                 /* FLEX */
+  display: flex;              
   flex-direction: column;
   gap: 9px;
 }
@@ -170,6 +207,7 @@ ul {
   color: rgba(255, 255, 255, 0.6);
   font-style: normal;
 }
+
 
 
 
