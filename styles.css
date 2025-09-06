@@ -208,6 +208,43 @@ ul {
   font-style: normal;
 }
 
+.features-list-li {
+  position: relative;
+  padding-top: 120px; /* відступ, щоб текст не налазив на іконку */
+  text-align: center;
+}
+
+/* Базовий псевдоелемент */
+.features-list-li::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 70px;
+  height: 70px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+
+.features-list-li:nth-child(1)::before {
+  background-image: url("images/antenna.svg");
+}
+
+.features-list-li:nth-child(2)::before {
+  background-image: url("images/clock.svg");
+}
+
+.features-list-li:nth-child(3)::before {
+  background-image: url("images/diagram.svg");
+}
+
+.features-list-li:nth-child(4)::before {
+  background-image: url("images/astronaut.svg");
+}
+
+
 
 
 
