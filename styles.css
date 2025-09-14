@@ -96,7 +96,7 @@ ul {
 }
 
 .contacts {
-  display: flex;                 /* FLEX */
+  display: flex;               
   gap: 40px;
   font-size: 14px;
   color: var(--secondary-text-color);
@@ -210,11 +210,10 @@ ul {
 
 .features-list-li {
   position: relative;
-  padding-top: 120px; /* відступ, щоб текст не налазив на іконку */
+  padding-top: 120px; 
   text-align: center;
 }
 
-/* Базовий псевдоелемент */
 .features-list-li::before {
   content: "";
   position: absolute;
@@ -243,6 +242,7 @@ ul {
 .features-list-li:nth-child(4)::before {
   background-image: url("images/astronaut.svg");
 }
+
 
 
 
