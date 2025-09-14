@@ -228,20 +228,21 @@ ul {
 
 
 .features-list-li:nth-child(1)::before {
-  background-image: url("images/antenna.svg");
+  background-image: url("photo_2025-09-14_12-33-03.jpg.svg");
 }
 
 .features-list-li:nth-child(2)::before {
-  background-image: url("images/clock.svg");
+  background-image: url("photo_2025-09-14_12-33-07.jpg.svg");
 }
 
 .features-list-li:nth-child(3)::before {
-  background-image: url("images/diagram.svg");
+  background-image: url("photo_2025-09-14_12-33-11.jpg.svg");
 }
 
 .features-list-li:nth-child(4)::before {
-  background-image: url("images/astronaut.svg");
+  background-image: url("photo_2025-09-14_12-33-14.jpg.svg");
 }
+
 
 
 
