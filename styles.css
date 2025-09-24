@@ -146,7 +146,7 @@ ul {
   position: relative;
   background-image: 
     linear-gradient(rgba(47, 48, 58, 0.6), rgba(47, 48, 58, 0.6)), 
-    url("images/hero-bg.jpg"); 
+    url("photo_2025-09-24_20-27-37.jpg"); 
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -251,6 +251,7 @@ ul {
 .features-list-li:nth-child(4)::before {
   background-image: url("photo_2025-09-14_12-33-14.jpg.svg");
 }
+
 
 
 
