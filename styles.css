@@ -140,6 +140,10 @@ ul {
   gap: 40px;
 }
 
+.head-ul:hover{
+  color: var(--secondary-text-color);
+}
+
 .nav-link {
   color: var(--primary-text-color);
   font-weight: 500;
@@ -307,6 +311,7 @@ ul {
 .features-list-li:nth-child(4)::before {
   background-image: url("photo_2025-09-14_12-33-14.jpg.svg");
 }
+
 
 
 
