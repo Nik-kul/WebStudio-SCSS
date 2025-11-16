@@ -34,7 +34,7 @@
   transition: color 0.3s;
 }
 
-.hedul:hover{
+.hedul:hover a{
    color: #2196F3;
 }
 
@@ -318,6 +318,7 @@ ul {
 .features-list-li:nth-child(4)::before {
   background-image: url("photo_2025-09-14_12-33-14.jpg.svg");
 }
+
 
 
 
