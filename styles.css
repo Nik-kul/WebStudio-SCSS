@@ -109,6 +109,21 @@ ul {
   margin-right: auto;
 }
 
+.head-ul{
+ color: var(--primary-text-color);
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.head-ul:hover{
+color: var(--accent-color);
+  
+}
+
+
+
+
+
 .section {
   padding: 94px 0;
 }
@@ -309,6 +324,7 @@ ul {
 .features-list-li:nth-child(4)::before {
   background-image: url("photo_2025-09-14_12-33-14.jpg.svg");
 }
+
 
 
 
