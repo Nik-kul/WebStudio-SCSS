@@ -235,7 +235,8 @@ ul {
 
 
 .features-list {
-  display: flex;            
+  display: flex;  
+  text-align:left;
 }
 .features-list-li {
   flex: 1;   
@@ -307,6 +308,7 @@ ul {
 .features-list-li:nth-child(4)::before {
   background-image: url("photo_2025-09-14_12-33-14.jpg.svg");
 }
+
 
 
 
