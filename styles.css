@@ -90,8 +90,9 @@ ul {
     height: 70px;
     width: 370px;
     bottom: 0px;
+    opacity:50%;
     position: absolute;
-    background-color: darkgrey;
+    background-color: black;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -305,6 +306,7 @@ ul {
 .features-list-li:nth-child(4)::before {
   background-image: url("photo_2025-09-14_12-33-14.jpg.svg");
 }
+
 
 
 
