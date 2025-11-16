@@ -28,7 +28,7 @@
   padding-bottom: 94px;
 }
 
-.hedul{
+.hedul a{
   color: #212121 ;
   font-weight: 500;
   transition: color 0.3s;
@@ -318,6 +318,7 @@ ul {
 .features-list-li:nth-child(4)::before {
   background-image: url("photo_2025-09-14_12-33-14.jpg.svg");
 }
+
 
 
 
