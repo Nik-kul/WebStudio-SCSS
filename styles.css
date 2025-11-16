@@ -290,6 +290,54 @@ ul {
   background-repeat: no-repeat;
 }
 
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
+
+.social-networks {
+  display: flex;
+  list-style-type: none;
+  justify-content: center;
+}
+
+.social-networks li {
+  margin: 0.15em;
+  position: relative;
+  font-size: 1.2em;
+}
+
+.social-networks i {
+  color: #fff;
+  position: absolute;
+  top: 21px;
+  left: 21px;
+  transition: all $timing ease-out;
+}
+
+.social-networks a {
+  display: inline-block;
+}
+
+.social-networks a:before {
+  transform: scale(1);
+  content: " ";
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  display: block;
+  background: linear-gradient(45deg, #1441e6, #00ff72);
+  transition: all 0.2s ease-out;
+}
+
+.social-networks a:hover:before {
+  transform: scale(0);
+  transition: all $timing ease-in;
+}
+
+.social-networks a:hover i {
+  transform: scale(2.2);
+  color: #1441e6;
+  background: -webkit-linear-gradient(45deg, $iconColor, $accent);
+  transition: all 0.2s ease-in;
+}
 
 .features-list-li:nth-child(1)::before {
   background-image: url("photo_2025-09-14_12-33-03.jpg.svg");
@@ -306,6 +354,7 @@ ul {
 .features-list-li:nth-child(4)::before {
   background-image: url("photo_2025-09-14_12-33-14.jpg.svg");
 }
+
 
 
 
