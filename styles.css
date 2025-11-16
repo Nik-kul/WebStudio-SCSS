@@ -148,7 +148,7 @@ ul {
   transition: color 0.3s;
 }
 .nav-link.current,
-.nav-link.head-ul:hover {
+.nav-link:hover {
   color: var(--accent-color);
 }
 
@@ -309,6 +309,7 @@ ul {
 .features-list-li:nth-child(4)::before {
   background-image: url("photo_2025-09-14_12-33-14.jpg.svg");
 }
+
 
 
 
