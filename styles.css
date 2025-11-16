@@ -247,6 +247,7 @@ ul {
   text-transform: uppercase;
 }
 .feature-text {
+  text-align:align-items;
   color: #757575;
   font-size: 14px;
   line-height: 1.7;
@@ -305,6 +306,7 @@ ul {
 .features-list-li:nth-child(4)::before {
   background-image: url("photo_2025-09-14_12-33-14.jpg.svg");
 }
+
 
 
 
