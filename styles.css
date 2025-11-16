@@ -60,6 +60,47 @@ ul {
   list-style: none;
 }
 
+.WhatDoWeDo-section-container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.WhatDoWeDo-section-h2 {
+    margin: 0 auto;
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+.WhatDoWeDo-section-list {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.WhatDoWeDo-section-img-list-items {
+    width: 370px;
+    height: 294px;
+}
+
+.WhatDoWeDo-p-list-items {
+    height: 70px;
+    width: 370px;
+    bottom: 0px;
+    position: absolute;
+    background-color: #2F303A;
+    opacity: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.WhatDoWeDo-p-list-items>span {
+    color: var(--white-text-color-background-color);
+}
+
 .container {
   width: 1200px;
   padding-left: 15px;
@@ -265,6 +306,7 @@ ul {
 .features-list-li:nth-child(4)::before {
   background-image: url("photo_2025-09-14_12-33-14.jpg.svg");
 }
+
 
 
 
