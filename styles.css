@@ -29,13 +29,13 @@
 }
 
 .hedul{
-  color: var(--primary-text-color);
+  color: #212121 ;
   font-weight: 500;
   transition: color 0.3s;
 }
 
 .hedul:hover{
-   color: var(--accent-color);
+   color: #2196F3;
 }
 
 .header-svg-items {
@@ -318,6 +318,7 @@ ul {
 .features-list-li:nth-child(4)::before {
   background-image: url("photo_2025-09-14_12-33-14.jpg.svg");
 }
+
 
 
 
