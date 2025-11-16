@@ -221,6 +221,77 @@ ul {
   color: #fff;
 }
 
+
+
+
+.regular-customers {
+    max-width: 1170px;
+    min-height: 184px;
+    margin: 100px auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.regular-customers-h2 {
+    font-size: 36px;
+}
+
+.regular-customers-list {
+    min-height: 92px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.regular-customers-list-items {
+    width: 170px;
+    height: 92px;
+    border: 1px solid var(--regular-customers-color);
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.regular-customers-list-items:hover {
+    border-color: var(--span-buttonBackground-aHover-color);
+}
+
+.customer {
+    fill: var(--regular-customers-color);
+}
+
+.customer:hover {
+    fill: var(--span-buttonBackground-aHover-color);
+}
+
+.first-customer {
+    height: 47px;
+}
+
+.second-customer {
+    height: 52px;
+}
+
+.third-customer {
+    height: 41px;
+}
+
+.fourth-customer {
+    height: 40px;
+}
+
+.fifth-customer {
+    height: 45px;
+}
+
+.sixth-customer {
+    height: 44px;
+}
+
+
 .hero-title {
   font-size: 44px;
   font-weight: 900;
@@ -318,6 +389,7 @@ ul {
 .features-list-li:nth-child(4)::before {
   background-image: url("photo_2025-09-14_12-33-14.jpg.svg");
 }
+
 
 
 
