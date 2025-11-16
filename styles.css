@@ -242,6 +242,7 @@ ul {
   text-align: left;
 }
 .feature-title {
+  text-align:left;
   font-weight: 700;
   margin-bottom: 10px;
   text-transform: uppercase;
@@ -306,6 +307,7 @@ ul {
 .features-list-li:nth-child(4)::before {
   background-image: url("photo_2025-09-14_12-33-14.jpg.svg");
 }
+
 
 
 
