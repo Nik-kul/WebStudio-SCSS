@@ -86,11 +86,12 @@ ul {
 }
 
 .WhatDoWeDo-p-list-items {
+    color:white;
     height: 70px;
     width: 370px;
     bottom: 0px;
     position: absolute;
-    background-color: white;
+    background-color: grey;
     opacity: 80%;
     display: flex;
     justify-content: center;
@@ -304,6 +305,7 @@ ul {
 .features-list-li:nth-child(4)::before {
   background-image: url("photo_2025-09-14_12-33-14.jpg.svg");
 }
+
 
 
 
