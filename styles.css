@@ -28,6 +28,20 @@
   padding-bottom: 94px;
 }
 
+
+.header-svg-items {
+    width: 16px; 
+    height: 12px;
+}
+
+.header-menu-a-items:hover,.header-svg-items:hover {
+    color: var(--span-buttonBackground-aHover-color);
+}
+
+.header-svg-items:hover {
+    fill: var(--span-buttonBackground-aHover-color);
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -251,6 +265,7 @@ ul {
 .features-list-li:nth-child(4)::before {
   background-image: url("photo_2025-09-14_12-33-14.jpg.svg");
 }
+
 
 
 
