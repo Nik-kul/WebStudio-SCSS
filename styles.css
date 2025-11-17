@@ -17,19 +17,19 @@
 }
 
 .box {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 92px;
-  width: 170px;            
-  padding: 20px;            
-  background: #fff;         
-  border-radius: 5px;      
-  border: 1px solid #ccc;   
+    width: 170px;
+    height: 92px;
+    border: 1px solid rgba(175, 177, 184, 1);
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: border-color 0.3s ease;
 }
 
-.box:hover{
-  color: rgba(33, 150, 243, 1);
+
+.regular-customers-list-items:hover .box {
+    border-color: #2196F3;
 }
 
 .container {
@@ -440,6 +440,7 @@ ul {
 .features-list-li:nth-child(4)::before {
   background-image: url("photo_2025-09-14_12-33-14.jpg.svg");
 }
+
 
 
 
