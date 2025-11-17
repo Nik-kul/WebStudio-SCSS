@@ -275,20 +275,27 @@ ul {
     justify-content: space-between;
 }
 
+
+.regular-customers-list-items svg use {
+    fill: rgba(175, 177, 184, 1);
+    transition: fill 0.3s ease;
+}
+
+
+.regular-customers-list-items:hover svg use {
+    fill: #2196F3; 
+}
+
+
 .regular-customers-list-items {
-    width: 170px;
-    height: 92px;
-    border: 1px solid var(--regular-customers-color);
-    border-radius: 3px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    border: 1px solid rgba(175, 177, 184, 1);
+    transition: border-color 0.3s ease;
 }
 
 .regular-customers-list-items:hover {
-    border-color: var(--span-buttonBackground-aHover-color);
+    border-color: #2196F3;
+    cursor: pointer;
 }
-
 .customer {
     fill: rgba(175, 177, 184, 1);
     margin: 0 auto;
@@ -421,6 +428,7 @@ ul {
 .features-list-li:nth-child(4)::before {
   background-image: url("photo_2025-09-14_12-33-14.jpg.svg");
 }
+
 
 
 
