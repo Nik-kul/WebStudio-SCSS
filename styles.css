@@ -147,7 +147,7 @@ ul {
 .custom{
   width:106px !important; 
   height:60px !important; 
-  color: #757575 !important;
+  fill: rgba(33, 150, 243, 1) !important;
 }
 
 .nav-list {
@@ -266,11 +266,11 @@ ul {
 }
 
 .customer {
-    fill: var(--regular-customers-color);
+    fill: rgba(33, 150, 243, 1);
 }
 
 .customer:hover {
-    fill: var(--span-buttonBackground-aHover-color);
+    fill: rgba(33, 150, 243, 1);
 }
 
 .first-customer {
@@ -395,6 +395,7 @@ ul {
 .features-list-li:nth-child(4)::before {
   background-image: url("photo_2025-09-14_12-33-14.jpg.svg");
 }
+
 
 
 
