@@ -252,7 +252,28 @@ ul {
   color: #fff;
 }
 
+.regular-customers-list-items {
+    width: 170px;
+    height: 92px;
+    border: 1px solid rgba(175, 177, 184, 1);
+    border-radius: 5px;
 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: border-color 0.3s ease;
+}
+
+
+.regular-customers-list-items:hover {
+    border-color: #2196F3;
+}
+
+.regular-customers-list-items:hover svg,
+.regular-customers-list-items:hover svg use {
+    fill: #2196F3;
+}
 
 
 .regular-customers {
@@ -417,5 +438,6 @@ ul {
 .features-list-li:nth-child(4)::before {
   background-image: url("photo_2025-09-14_12-33-14.jpg.svg");
 }
+
 
 
