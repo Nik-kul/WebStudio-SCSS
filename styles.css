@@ -51,16 +51,16 @@
 }
 
 .hedul li svg use {
-  fill: rgba(33, 150, 243, 1);
+  fill: #757575;
   transition: fill 0.3s ease;
 }
 
 .hedul li:hover svg use {
-  fill: rgba(33, 150, 243, 1);
+  fill: #2196F3;
 }
 
 .hedul li:hover a {
-  color: rgba(33, 150, 243, 1);
+  color: #2196F3;
 }
 .header-svg-items {
     width: 16px; 
@@ -421,6 +421,7 @@ ul {
 .features-list-li:nth-child(4)::before {
   background-image: url("photo_2025-09-14_12-33-14.jpg.svg");
 }
+
 
 
 
