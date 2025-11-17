@@ -269,6 +269,7 @@ ul {
 
 
 .regular-customers {
+  border-radius: 5px;
     max-width: 1170px;
     min-height: 184px;
     margin: 100px auto;
@@ -287,10 +288,12 @@ ul {
     min-height: 92px;
     display: flex;
     justify-content: space-between;
+  border-radius: 5px;
 }
 
 
 .regular-customers-list-items svg use {
+  border-radius: 5px;
     fill: rgba(175, 177, 184, 1);
     transition: fill 0.3s ease;
 }
@@ -300,6 +303,7 @@ ul {
 }
 
 .regular-customers-list-items svg use {
+  border-radius: 5px;
   fill: rgba(175, 177, 184, 1);
   transition: 0.25s;
 }
@@ -312,6 +316,7 @@ ul {
     fill: rgba(175, 177, 184, 1);
     margin: 0 auto;
     display: block;
+    border-radius: 5px;
 }
 
 .customer:hover {
@@ -440,6 +445,7 @@ ul {
 .features-list-li:nth-child(4)::before {
   background-image: url("photo_2025-09-14_12-33-14.jpg.svg");
 }
+
 
 
 
