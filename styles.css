@@ -28,6 +28,10 @@
   border: 1px solid #ccc;   
 }
 
+.box:hover{
+  color:rgba(33, 150, 243, 1);
+}
+
 .container {
   width: 1200px;
   padding-left: 15px;
@@ -409,6 +413,7 @@ ul {
 .features-list-li:nth-child(4)::before {
   background-image: url("photo_2025-09-14_12-33-14.jpg.svg");
 }
+
 
 
 
