@@ -44,27 +44,35 @@
   padding-bottom: 94px;
 }
 
-.hedul a{
-  color: #212121 ;
-  font-weight: 500;
-  transition: color 0.3s;
+.hedul li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
-.hedul:hover a{
-   color: #2196F3;
+.hedul li svg use {
+  fill: rgba(33, 150, 243, 1);
+  transition: fill 0.3s ease;
 }
 
+.hedul li:hover svg use {
+  fill: rgba(33, 150, 243, 1);
+}
+
+.hedul li:hover a {
+  color: rgba(33, 150, 243, 1);
+}
 .header-svg-items {
     width: 16px; 
     height: 12px;
 }
 
 .header-menu-a-items:hover,.header-svg-items:hover {
-    color: var(--span-buttonBackground-aHover-color);
+    color:rgba(33, 150, 243, 1) ;
 }
 
 .header-svg-items:hover {
-    fill: var(--span-buttonBackground-aHover-color);
+    fill: rgba(33, 150, 243, 1);
 }
 
 * {
@@ -413,6 +421,7 @@ ul {
 .features-list-li:nth-child(4)::before {
   background-image: url("photo_2025-09-14_12-33-14.jpg.svg");
 }
+
 
 
 
