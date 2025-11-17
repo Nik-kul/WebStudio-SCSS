@@ -279,20 +279,8 @@ ul {
 }
 
 
-.regular-customers-list-items svg use {
-  border-radius: 5px;
-    fill: rgba(175, 177, 184, 1);
-    transition: fill 0.3s ease;
-}
-
 .regular-customers-list-items:hover svg use {
     fill: #2196F3; 
-}
-
-.regular-customers-list-items svg use {
-  border-radius: 5px;
-  fill: rgba(175, 177, 184, 1);
-  transition: 0.25s;
 }
 
 
@@ -429,4 +417,5 @@ ul {
 .features-list-li:nth-child(4)::before {
   background-image: url("photo_2025-09-14_12-33-14.jpg.svg");
 }
+
 
