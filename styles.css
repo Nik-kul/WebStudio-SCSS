@@ -28,9 +28,6 @@
 }
 
 
-.regular-customers-list-items:hover .box {
-    border-color: #2196F3;
-}
 
 .container {
   width: 1200px;
@@ -305,9 +302,6 @@ ul {
   transition: 0.25s;
 }
 
-.regular-customers-list-items:hover svg use {
-  fill: #2196F3;  /* синій */
-}
 
 .customer {
     fill: rgba(175, 177, 184, 1);
@@ -442,6 +436,7 @@ ul {
 .features-list-li:nth-child(4)::before {
   background-image: url("photo_2025-09-14_12-33-14.jpg.svg");
 }
+
 
 
 
