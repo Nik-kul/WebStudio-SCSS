@@ -29,7 +29,7 @@
 }
 
 .box:hover{
-  color:rgba(33, 150, 243, 1);
+  color: rgba(33, 150, 243, 1);
 }
 
 .container {
@@ -140,6 +140,14 @@ ul {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.regular-customers-list-items:hover{
+  color:rgba(33, 150, 243, 1);
+}
+
+.regular-customers-list-items:hover svg use{
+  fill: rgba(33, 150, 243, 1);
 }
 
 .section {
@@ -426,4 +434,5 @@ ul {
 .features-list-li:nth-child(4)::before {
   background-image: url("photo_2025-09-14_12-33-14.jpg.svg");
 }
+
 
