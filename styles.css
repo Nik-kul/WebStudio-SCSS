@@ -147,7 +147,7 @@ ul {
 .custom{
   width:106px !important; 
   height:60px !important; 
-  fill: rgba(33, 150, 243, 1) !important;
+  fill: rgba(175, 177, 184, 1) !important;
 }
 
 .nav-list {
@@ -395,6 +395,7 @@ ul {
 .features-list-li:nth-child(4)::before {
   background-image: url("photo_2025-09-14_12-33-14.jpg.svg");
 }
+
 
 
 
