@@ -266,7 +266,7 @@ ul {
 }
 
 .customer {
-    fill: rgba(33, 150, 243, 1);
+    fill: rgba(175, 177, 184, 1);
 }
 
 .customer:hover {
@@ -395,6 +395,7 @@ ul {
 .features-list-li:nth-child(4)::before {
   background-image: url("photo_2025-09-14_12-33-14.jpg.svg");
 }
+
 
 
 
