@@ -90,27 +90,6 @@ a {
 }
 ul {
   list-style: none;
-  display: flex;
-}
-
-.social-icons {
-  display: flex;
-  gap: 20px;
-}
-
-.social-icons li {
-  list-style: none;
-}
-
-.social-icons svg {
-  width: 40px;
-  height: 40px;
-  fill: #AFB1B8;   /* сірий колір як у WebStudio */
-  transition: 0.3s;
-}
-
-.social-icons svg:hover {
-  fill: #2196F3;   
 }
 
 .WhatDoWeDo-section-container {
@@ -461,6 +440,7 @@ ul {
 .features-list-li:nth-child(4)::before {
   background-image: url("photo_2025-09-14_12-33-14.jpg.svg");
 }
+
 
 
 
