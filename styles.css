@@ -18,6 +18,7 @@
 
 .box {
   display: flex;
+  justify-content: center;
   align-items: center;
   height: 92px;
   width: 170px;            
@@ -278,7 +279,8 @@ ul {
 
 .customer {
     fill: rgba(175, 177, 184, 1);
-    left: 64px;
+    margin: 0 auto;
+    display: block;
 }
 
 .customer:hover {
@@ -407,6 +409,7 @@ ul {
 .features-list-li:nth-child(4)::before {
   background-image: url("photo_2025-09-14_12-33-14.jpg.svg");
 }
+
 
 
 
