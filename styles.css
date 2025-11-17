@@ -16,6 +16,15 @@
   --hover-color: #188CE8;
 }
 
+.box {
+  height: 100px;
+  width: 300px;            
+  padding: 20px;            
+  background: #fff;         
+  border-radius: 5px;      
+  border: 1px solid #ccc;   
+}
+
 .container {
   width: 1200px;
   padding-left: 15px;
@@ -395,6 +404,7 @@ ul {
 .features-list-li:nth-child(4)::before {
   background-image: url("photo_2025-09-14_12-33-14.jpg.svg");
 }
+
 
 
 
