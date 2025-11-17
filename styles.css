@@ -169,9 +169,9 @@ ul {
 }
 
 .custom{
-  width:106px !important; 
-  height:60px !important; 
-  fill: rgba(175, 177, 184, 1) !important;
+  width:106px; 
+  height:60px; 
+  fill: rgba(175, 177, 184, 1);
 }
 
 .nav-list {
@@ -285,15 +285,15 @@ ul {
     fill: #2196F3; 
 }
 
-.regular-customers-list-items {
-    border: 1px solid rgba(175, 177, 184, 1);
-    transition: border-color 0.3s ease;
+.regular-customers-list-items svg use {
+  fill: rgba(175, 177, 184, 1);
+  transition: 0.25s;
 }
 
-.regular-customers-list-items:hover {
-    border-color: #2196F3;
-    cursor: pointer;
+.regular-customers-list-items:hover svg use {
+  fill: #2196F3;  /* синій */
 }
+
 .customer {
     fill: rgba(175, 177, 184, 1);
     margin: 0 auto;
@@ -426,3 +426,4 @@ ul {
 .features-list-li:nth-child(4)::before {
   background-image: url("photo_2025-09-14_12-33-14.jpg.svg");
 }
+
