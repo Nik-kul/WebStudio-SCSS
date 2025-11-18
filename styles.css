@@ -43,6 +43,12 @@
   padding-bottom: 94px;
 }
 
+
+.social-networks-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
 .hedul li {
   display: flex;
   align-items: center;
@@ -460,6 +466,7 @@ ul {
 .features-list-li:nth-child(4)::before {
   background-image: url("photo_2025-09-14_12-33-14.jpg.svg");
 }
+
 
 
 
