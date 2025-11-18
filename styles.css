@@ -29,7 +29,41 @@
 
 
 
+.social-list {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
 
+.social-list li a {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: #3a3c44; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  transition: background 0.3s ease, fill 0.3s ease;
+}
+
+.social-list svg {
+  width: 20px;
+  height: 20px;
+  fill: #bfc1c7; 
+  transition: fill 0.3s ease;
+}
+
+.social-list li a:hover {
+  background: #2196f3; 
+}
+
+.social-list li a:hover svg {
+  fill: #ffffff; 
+}
 
 .container {
   width: 1200px;
@@ -467,6 +501,7 @@ ul {
 .features-list-li:nth-child(4)::before {
   background-image: url("photo_2025-09-14_12-33-14.jpg.svg");
 }
+
 
 
 
