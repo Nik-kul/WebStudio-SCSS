@@ -498,9 +498,9 @@ ul {
 
 .foot {
   display: flex;
-  justify-content: flex-start;  
+  justify-content: center;
   align-items: flex-start;
-  gap: 120px; 
+  gap: 200px; 
 }
 
 .footer-logo {
@@ -608,6 +608,7 @@ ul {
 .features-list-li:nth-child(4)::before {
   background-image: url("photo_2025-09-14_12-33-14.jpg.svg");
 }
+
 
 
 
