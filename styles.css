@@ -495,11 +495,14 @@ ul {
   color: #fff;
   padding: 60px 0;
 }
+
 .foot {
-  display: flex;              
-  flex-direction: column;
-  gap: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 0;
 }
+
 .footer-contacts {
   display: flex;              
   flex-direction: column;
@@ -542,6 +545,7 @@ ul {
 .features-list-li:nth-child(4)::before {
   background-image: url("photo_2025-09-14_12-33-14.jpg.svg");
 }
+
 
 
 
