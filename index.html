@@ -45,15 +45,15 @@
     <form action="">
       <h2 style = "text-align:center;">Залиште свої дані, ми вам передзвонимо</h2>
       <label for="name">Ім'я
-          <input type="text" name="name" id="name" placeholder="" required>
+          <input type="text" name="name" id="name" placeholder="" required title = "name">
       </label>
       <label for="lname">Телефон 
-        <input type="tel" name="lname" id="lname" placeholder="" required>
+        <input type="tel" name="tel" id="tel" placeholder="" required title = "phone number">
         <label for="name">Пошта
-        <input type="email" name="pass" id="pass" placeholder="" required minlength="5" maxlength="12" title="min-5 max-12">
+        <input type="email" name="email" id="email" placeholder="" required minlength="7"title="email">
       </label>
         <label for="name">Коментар
-        <input type="text" name="pass" id="pass" placeholder="" required minlength="5" maxlength="12" title="min-5 max-12">
+        <input type="text" name="comment" id="comment" placeholder="" minlength="1" title="comment">
       </label>
 <button class="submit" disabled>submit</button>
     </form>
