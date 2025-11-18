@@ -37,7 +37,27 @@
   <section class="hero">
     <div class="container">
       <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-      <button class="hero-button">Замовити послугу</button>
+      <button class="hero-button data-modal-open">Замовити послугу</button>
+       <div class="backdrop is-hidden" data-modal>
+    
+    <div class="modal">
+    
+    <form action="">
+      <label for="name">Name
+          <input type="text" name="name" id="name" placeholder="John" required>
+      </label>
+      <label for="lname">Last name
+        <input type="text" name="lname" id="lname" placeholder="smith">
+        <label for="name">Pass
+        <input type="password" name="pass" id="pass" placeholder="****" required minlength="5" maxlength="12" title="min-5 max-12">
+      </label>
+<button class="submit">sub</button>
+    </form>
+    <button class="btn" data-modal-close>Закрити</button>
+  </div>
+  
+</div>
+
     </div>
   </section>
    
