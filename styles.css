@@ -320,8 +320,9 @@ ul {
 
 .team-container {
   display: flex;
-  justify-content: space-between; 
-  gap: 30px; 
+  flex-wrap: wrap;
+  justify-content: center; 
+  gap: 10px; 
   flex-wrap: wrap; 
 }
 
@@ -541,6 +542,7 @@ ul {
 .features-list-li:nth-child(4)::before {
   background-image: url("photo_2025-09-14_12-33-14.jpg.svg");
 }
+
 
 
 
