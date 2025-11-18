@@ -63,6 +63,7 @@
 
 .social-list li a:hover svg {
   fill: #ffffff; 
+  stroke: #ffffff;
 }
 
 .container {
@@ -501,6 +502,7 @@ ul {
 .features-list-li:nth-child(4)::before {
   background-image: url("photo_2025-09-14_12-33-14.jpg.svg");
 }
+
 
 
 
