@@ -53,18 +53,20 @@
 .social-list svg {
   width: 20px;
   height: 20px;
-  fill: #bfc1c7; 
-  transition: fill 0.3s ease;
+  fill: #bfc1c7 !important;
+  stroke: #bfc1c7 !important;
+  transition: 0.3s;
+}
+
+.social-list li a:hover svg {
+  fill: #ffffff !important;
+  stroke: #ffffff !important;
 }
 
 .social-list li a:hover {
   background: #2196f3; 
 }
 
-.social-list li a:hover svg {
-  fill: #ffffff; 
-  stroke: #ffffff;
-}
 
 .container {
   width: 1200px;
@@ -502,6 +504,7 @@ ul {
 .features-list-li:nth-child(4)::before {
   background-image: url("photo_2025-09-14_12-33-14.jpg.svg");
 }
+
 
 
 
