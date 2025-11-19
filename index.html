@@ -38,31 +38,48 @@
     <div class="container">
       <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
       <button class="hero-button" data-modal-open >Замовити послугу</button>
-       <div class="backdrop is-hidden" data-modal>
-    
-    <div class="modal">
-    
-    <form action="">
-      <h2 style = "text-align:center;">Залиште свої дані, ми вам передзвонимо</h2>
-      <label for="name">Ім'я
-          <input type="text" name="name" id="name" placeholder="" required title = "name">
+<div class="backdrop is-hidden" data-modal>
+  <div class="modal-window">
+
+    <button class="modal-close" data-modal-close>✕</button>
+
+    <h2 class="modal-title">Залиште свої дані, ми вам передзвонимо</h2>
+
+    <form class="modal-form">
+
+      <label>
+        <span>Ім'я</span>
+        <input type="text" name="name" required>
       </label>
-      <label for="lname">Телефон 
-        <input type="tel" name="phone" id="phone" placeholder="" required title = "phone number">
-        <label for="name">Пошта
-        <input type="email" name="email" id="email" placeholder="" required minlength="7"title="email">
+
+      <label>
+        <span>Телефон</span>
+        <input type="tel" name="tel" required>
       </label>
-        <label for="name">Коментар
-        <input type="text" name="submit" id="submit" placeholder="" minlength="1" title="comment">
+
+      <label>
+        <span>Пошта</span>
+        <input type="email" name="email" required>
       </label>
-<button class="submit" >submit</button>
+
+      <label>
+        <span>Коментар</span>
+        <textarea name="comment" rows="3"></textarea>
+      </label>
+
+      <label class="check">
+        <input type="checkbox" required>
+        Погоджуюся з розсилкою та приймаю
+        <a href="#">Умови договору</a>
+      </label>
+
+      <button type="submit" class="submit-btn">Відправити</button>
+
     </form>
-      <button class = "btn" data-modal-close disabled></button>
+
   </div>
-  
 </div>
 
-    </div>
   </section>
   <script src = "modal-26.js"></script>
    
