@@ -1,41 +1,32 @@
+
 (() => {
   const refs = {
-    openModalBtn: document.querySelector("[data-modal-open]"),
-    closeModalBtn: document.querySelector("[data-modal-close]"),
+    open: document.querySelector("[data-modal-open]"),
+    close: document.querySelector("[data-modal-close]"),
     modal: document.querySelector("[data-modal]"),
-    form: document.querySelector("form"),
-    submitBtn: document.querySelector(".submit")
+    form: document.querySelector(".modal-form"),
   };
 
-  refs.openModalBtn.addEventListener("click", toggleModal);
-
-  // Кнопка Закрити — завжди активна
-  refs.closeModalBtn.addEventListener("click", toggleModal);
-
-  // Активуємо submit, якщо всі поля заповнені
-  refs.form.addEventListener("input", () => {
-    const inputs = refs.form.querySelectorAll("input");
-    let allFilled = true;
-
-    inputs.forEach(input => {
-      if (input.value.trim() === "") {
-        allFilled = false;
-      }
-    });
-
-    refs.submitBtn.disabled = !allFilled;
+  // Відкрити модалку
+  refs.open.addEventListener("click", () => {
+    refs.modal.classList.remove("is-hidden");
+    document.body.classList.add("no-scroll");
   });
 
-  // Submit → закриваємо та очищаємо
-  refs.form.addEventListener("submit", (event) => {
-    event.preventDefault();
-    refs.form.reset();
-    refs.submitBtn.disabled = true;
-    toggleModal();
-  });
+  // Закрити модалку
+  refs.close.addEventListener("click", closeModal);
 
-  function toggleModal() {
-    refs.modal.classList.toggle("is-hidden");
-    document.body.classList.toggle("no-scroll");
+  function closeModal() {
+    refs.modal.classList.add("is-hidden");
+    document.body.classList.remove("no-scroll");
   }
+
+  // Автоматичне закриття після Submit
+  refs.form.addEventListener("submit", (e) => {
+    e.preventDefault(); // щоб не перезавантажувало сторінку
+
+    closeModal();
+
+    refs.form.reset(); // очистити після відправки
+  });
 })();
