@@ -149,6 +149,92 @@ svg {
   transition: fill 0.3s ease;
 }
 
+.backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  transition: opacity .3s ease;
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.modal-window {
+  background: #fff;
+  border-radius: 12px;
+  padding: 30px;
+  width: 450px;
+  position: relative;
+  animation: popup .25s ease;
+}
+
+@keyframes popup {
+  from { transform: scale(0.8); opacity: 0; }
+  to   { transform: scale(1); opacity: 1; }
+}
+
+.modal-close {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  background: transparent;
+  border: none;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.modal-title {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.modal-form label {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+  font-size: 14px;
+  gap: 5px;
+}
+
+.modal-form input,
+.modal-form textarea {
+  padding: 10px 14px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.check {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.submit-btn {
+  width: 100%;
+  background: #2196f3;
+  color: white;
+  border: none;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background .3s;
+}
+
+.submit-btn:hover {
+  background: #1976d2;
+}
+
+
 .hedul li:hover svg use {
   fill: #2196F3;
 }
@@ -614,6 +700,7 @@ ul {
 .features-list-li:nth-child(4)::before {
   background-image: url("photo_2025-09-14_12-33-14.jpg.svg");
 }
+
 
 
 
