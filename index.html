@@ -40,45 +40,42 @@
       <button class="hero-button" data-modal-open >Замовити послугу</button>
 <div class="backdrop is-hidden" data-modal>
   <div class="modal-window">
-
-    <button class="modal-close" data-modal-close>✕</button>
+    <button class="modal-close" data-modal-close>&times;</button>
 
     <h2 class="modal-title">Залиште свої дані, ми вам передзвонимо</h2>
 
     <form class="modal-form">
-
       <label>
         <span>Ім'я</span>
-        <input type="text" name="name" required>
+        <input type="text" id="name" required />
       </label>
 
       <label>
         <span>Телефон</span>
-        <input type="tel" name="tel" required>
+        <input type="tel" id="phone" required />
       </label>
 
       <label>
         <span>Пошта</span>
-        <input type="email" name="email" required>
+        <input type="email" id="email" required />
       </label>
 
       <label>
         <span>Коментар</span>
-        <textarea name="comment" rows="3"></textarea>
+        <textarea id="comment"></textarea>
       </label>
 
-      <label class="check">
-        <input type="checkbox" required>
-        Погоджуюся з розсилкою та приймаю
+      <label class="checkbox">
+        <input type="checkbox" id="agree" required />
+        Погоджуюсь з розсилкою та приймаю
         <a href="#">Умови договору</a>
       </label>
 
-      <button type="submit" class="submit-btn">Відправити</button>
-
+      <button type="submit" class="send-btn">Відправити</button>
     </form>
-
   </div>
 </div>
+
 
   </section>
   <script src = "modal-26.js"></script>
