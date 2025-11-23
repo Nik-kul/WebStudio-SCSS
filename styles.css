@@ -80,18 +80,20 @@
 
 
 .agree-line {
+  color: black !important;
   display: flex !important;
-  align-items: center;
-  gap: 8px;
-  white-space: nowrap !important; /* НЕ ДАЄ ТЕКСТУ ПЕРЕНОСИТИСЬ */
-}
+  align-items: center !important;
+  gap: 8px !important;
+  white-space: nowrap !important; 
 
 .agree-line span {
+  color:black !important;
   white-space: nowrap !important;
   display: inline !important;
 }
 
 .agree-line a {
+  color: blue !important;
   white-space: nowrap !important;
 }
 
@@ -807,6 +809,7 @@ ul {
 .features-list-li:nth-child(4)::before {
   background-image: url("photo_2025-09-14_12-33-14.jpg.svg");
 }
+
 
 
 
