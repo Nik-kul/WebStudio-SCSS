@@ -16,6 +16,13 @@
   --hover-color: #188CE8;
 }
 
+.nav {
+  display: flex !important;
+  gap: 40px !important;
+  align-items: center !important;
+}
+
+
 .nav a {
   position: relative;
   display: inline-block;
@@ -867,6 +874,7 @@ ul {
 .features-list-li:nth-child(4)::before {
   background-image: url("photo_2025-09-14_12-33-14.jpg.svg");
 }
+
 
 
 
