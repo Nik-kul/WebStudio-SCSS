@@ -79,12 +79,30 @@
 
 
 
+
+input[type="checkbox"] {
+  appearance: auto !important;
+  -webkit-appearance: auto !important;
+
+  width: 18px !important;
+  height: 18px !important;
+
+  display: inline-block !important;
+
+  position: static !important;
+  opacity: 1 !important;
+
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
 .agree-line {
   color: black !important;
   display: flex !important;
   align-items: center !important;
   gap: 8px !important;
   white-space: nowrap !important; 
+}
 
 .agree-line span {
   color:black !important;
@@ -809,6 +827,7 @@ ul {
 .features-list-li:nth-child(4)::before {
   background-image: url("photo_2025-09-14_12-33-14.jpg.svg");
 }
+
 
 
 
