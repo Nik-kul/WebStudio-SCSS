@@ -61,6 +61,7 @@
 
 
 
+
 .backdrop {
   position: fixed;
   top: 0;
@@ -72,6 +73,26 @@
   justify-content: center;
   align-items: center;
   z-index: 999;
+}
+
+
+
+
+
+.agree-line {
+  display: flex !important;
+  align-items: center;
+  gap: 8px;
+  white-space: nowrap !important; /* НЕ ДАЄ ТЕКСТУ ПЕРЕНОСИТИСЬ */
+}
+
+.agree-line span {
+  white-space: nowrap !important;
+  display: inline !important;
+}
+
+.agree-line a {
+  white-space: nowrap !important;
 }
 
 .backdrop.is-hidden {
@@ -786,6 +807,7 @@ ul {
 .features-list-li:nth-child(4)::before {
   background-image: url("photo_2025-09-14_12-33-14.jpg.svg");
 }
+
 
 
 
