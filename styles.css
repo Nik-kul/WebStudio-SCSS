@@ -875,6 +875,114 @@ ul {
   background-image: url("photo_2025-09-14_12-33-14.jpg.svg");
 }
 
+/* ============================= */
+/*      УНІВЕРСАЛЬНІ ХОВЕРИ      */
+/* ============================= */
+
+/* Кнопки */
+button,
+.hero-button,
+.send-btn,
+.submit-btn {
+  transition:
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Навігація */
+.nav a {
+  transition:
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.nav a::after {
+  transition:
+    transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Хедер: Email + Телефон */
+.hedul li a {
+  transition:
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hedul li svg use {
+  transition:
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Клієнти (логотипи) */
+.regular-customers-list-items {
+  transition:
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.regular-customers-list-items svg use {
+  transition:
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Команда – соц. мережі */
+.social-list li a {
+  transition:
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social-list svg {
+  transition:
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Features icons */
+.features-list-li::before {
+  transition:
+    filter 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Footer соц іконки */
+.footer-social li a {
+  transition:
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-social svg {
+  transition:
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Modal close button крестик */
+.close-circle,
+.close-circle::before,
+.close-circle::after {
+  transition:
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Overlay появлення */
+.backdrop {
+  transition:
+    opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Inputs */
+.modal-form input,
+.modal-form textarea {
+  transition:
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-form input:focus,
+.modal-form textarea:focus {
+  border-color: var(--accent-color);
+  box-shadow: 0 0 4px rgba(33,150,243,0.6);
+}
+
+
 
 
 
