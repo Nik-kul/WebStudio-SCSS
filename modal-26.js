@@ -7,26 +7,26 @@
     form: document.querySelector(".modal-form"),
   };
 
+  if (!refs.modal) return;
+
   // Відкрити модалку
-  refs.open.addEventListener("click", () => {
+  refs.open?.addEventListener("click", () => {
     refs.modal.classList.remove("is-hidden");
     document.body.classList.add("no-scroll");
   });
 
-  // Закрити модалку
-  refs.close.addEventListener("click", closeModal);
+  // Закрити
+  refs.close?.addEventListener("click", closeModal);
 
   function closeModal() {
     refs.modal.classList.add("is-hidden");
     document.body.classList.remove("no-scroll");
   }
 
-  // Автоматичне закриття після Submit
-  refs.form.addEventListener("submit", (e) => {
-    e.preventDefault(); // щоб не перезавантажувало сторінку
-
+  // Закриття через submit
+  refs.form?.addEventListener("submit", (e) => {
+    e.preventDefault();
     closeModal();
-
-    refs.form.reset(); // очистити після відправки
+    refs.form.reset();
   });
 })();
