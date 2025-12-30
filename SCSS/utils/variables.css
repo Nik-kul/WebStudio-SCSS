@@ -1,0 +1,52 @@
+// sass/utils/_variables.scss
+
+// Colors
+$color-accent: #2196f3;
+$color-hover: #188ce8;
+
+$color-text-primary: #212121;
+$color-text-secondary: #757575;
+
+$color-white: #ffffff;
+$color-black: #000000;
+
+$color-bg-light: #f5f4fa;
+
+$color-footer-bg: #2f303a;
+$color-footer-text: rgba(255, 255, 255, 0.6);
+$color-footer-icon-bg: rgba(255, 255, 255, 0.1);
+
+$color-border: rgba(175, 177, 184, 1);
+$color-border-light: #ececec;
+
+$color-overlay: rgba(0, 0, 0, 0.5);
+$color-overlay-strong: rgba(0, 0, 0, 0.6);
+
+$color-social-bg: #3a3c44;
+$color-social-icon: #bfc1c7;
+
+// Typography
+$font-main: "Roboto", sans-serif;
+$font-logo: "Raleway", sans-serif;
+
+$fw-regular: 400;
+$fw-medium: 500;
+$fw-bold: 700;
+$fw-black: 900;
+
+// Layout
+$container-width: 1200px;
+$container-padding: 15px;
+
+$section-padding: 94px;
+
+// Radius
+$radius-sm: 4px;
+$radius-md: 6px;
+$radius-lg: 10px;
+$radius-xl: 12px;
+$radius-round: 50%;
+
+// Transitions
+$tr-time: 250ms;
+$tr-func: cubic-bezier(0.4, 0, 0.2, 1);
