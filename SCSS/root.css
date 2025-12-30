@@ -1,1 +1,17 @@
+:root {
+  /* Основні кольори */
+  --accent-color: #2196F3;
+  --primary-text-color: #212121;
+  --secondary-text-color: #757575;
+  --light-bg-color: #F5F4FA;
+  --white-color: #FFFFFF;
+  --black-color: #000000;
 
+  /* Футер */
+  --footer-bg-color: #2F303A;
+  --footer-text-color: rgba(255, 255, 255, 0.6);
+  --footer-icon-bg: rgba(255, 255, 255, 0.1);
+
+  /* Додаткові */
+  --hover-color: #188CE8;
+}
