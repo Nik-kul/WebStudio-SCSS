@@ -1,0 +1,45 @@
+/* Центрування flex */
+%flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Список без маркерів */
+%list-reset {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Посилання без підкреслення */
+%link-reset {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Секції */
+%section-padding {
+  padding: 94px 0;
+}
+
+/* Картки (team, features тощо) */
+%card {
+  background: #ffffff;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* Кнопка (базова) */
+%button-base {
+  border: none;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+/* Overlay (modal backdrop) */
+%overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.5);
+}
