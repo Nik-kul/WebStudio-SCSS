@@ -67,6 +67,67 @@ img {
   padding: 0 15px;
   margin: 0 auto;
 }
+/* Заборона скролу, коли модалка відкрита */
+.no-scroll {
+  overflow: hidden;
+}
+
+/* Фон модалки (оверлей) */
+.modal {
+  position: fixed;
+  inset: 0;                 /* top:0 right:0 bottom:0 left:0 */
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;            /* щоб вікно не впиралось в краї на мобілці */
+  z-index: 999;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  transition: opacity var(--tr) var(--ease), visibility var(--tr) var(--ease);
+}
+
+/* Сховано */
+.modal--hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+/* Вікно */
+.modal__window {
+  width: 100%;
+  max-width: 450px;
+  background: var(--white);
+  border-radius: 4px;
+  padding: 40px;
+  position: relative;
+  transform: scale(1);
+  transition: transform var(--tr) var(--ease);
+}
+
+/* Якщо хочеш ефект scale при появі */
+.modal--hidden .modal__window {
+  transform: scale(0.9);
+}
+
+/* Кнопка закриття */
+.modal__close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid var(--border-light);
+  background: var(--white);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+
+
+
 
 .section {
   padding: 60px 0;
@@ -344,3 +405,4 @@ img {
     text-align: left;
   }
 }
+
