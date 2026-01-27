@@ -1,5 +1,5 @@
 :root {
-  /* Основні кольори /
+  /* Основні кольори */
   --accent-color: #2196F3;
   --primary-text-color: #212121;
   --secondary-text-color: #757575;
@@ -1003,3 +1003,4 @@ button,
   border-color: var(--accent-color);
   box-shadow: 0 0 4px rgba(33,150,243,0.6);
 }
+
