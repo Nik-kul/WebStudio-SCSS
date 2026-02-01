@@ -174,3 +174,199 @@ ul {
   color: rgba(255,255,255,.6);
   text-decoration: none;
 }
+
+html { box-sizing: border-box; }
+*, *::before, *::after { box-sizing: inherit; }
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #212121;
+  background-color: #fff;
+  margin: 0;
+  overflow-x: hidden; /* умова 2 */
+}
+
+img { max-width: 100%; height: auto; display: block; }
+
+.no-scroll { overflow: hidden; }
+
+/* контейнер — Mobile First */
+.container{
+  width: 100%;
+  max-width: 480px;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (min-width: 768px){
+  .container{
+    max-width: 768px;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+
+@media screen and (min-width: 1200px){
+  .container{
+    max-width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+
+.header {
+  padding: 16px 0;
+  border-bottom: 1px solid #ECECEC;
+}
+
+.header-div{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap: 12px;
+}
+
+/* На мобілці: сховати навігацію і контакти, показати бургер */
+nav { display: none; }
+.hedul { display: none; }
+
+/* Бургер */
+.menu-btn{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  width:40px;
+  height:40px;
+  border:none;
+  background:transparent;
+  padding:0;
+  cursor:pointer;
+}
+
+.menu-btn-lines{
+  position:relative;
+  width:22px;
+  height:2px;
+  background: var(--primary-text-color);
+}
+
+.menu-btn-lines::before,
+.menu-btn-lines::after{
+  content:"";
+  position:absolute;
+  left:0;
+  width:22px;
+  height:2px;
+  background: var(--primary-text-color);
+}
+
+.menu-btn-lines::before{ top:-7px; }
+.menu-btn-lines::after{ top:7px; }
+
+/* 768+ показуємо nav і контакти, ховаємо бургер */
+@media screen and (min-width: 768px){
+  nav { display:block; }
+  .hedul { display:flex; gap: 10px; align-items:center; }
+
+  .menu-btn{ display:none; }
+
+  .nav{
+    display:flex;
+    gap:40px;
+    align-items:center;
+  }
+}
+
+/* overlay */
+.mobile-menu{
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background: rgba(0,0,0,0.45);
+
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+
+  transition: opacity 250ms ease, visibility 250ms ease;
+}
+
+/* панель */
+.mobile-menu__panel{
+  position: absolute;
+  inset: 0;
+  background: var(--white-color);
+
+  padding: 80px 40px 40px;
+
+  display: flex;
+  flex-direction: column;
+
+  transform: translateX(24px);
+  transition: transform 250ms ease;
+}
+
+/* open state */
+.mobile-menu.is-open{
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.mobile-menu.is-open .mobile-menu__panel{
+  transform: translateX(0);
+}
+
+/* меню-лінки */
+.mobile-nav__list{
+  display:flex;
+  flex-direction:column;
+  gap: 40px;
+  margin: 0;
+  padding: 0;
+}
+
+.mobile-nav__link{
+  font-size: 36px;
+  font-weight: 700;
+  color: #212121;
+}
+
+.mobile-nav__link.active{
+  color: var(--accent-color);
+}
+
+/* контакти внизу */
+.mobile-contacts{
+  margin-top: auto;
+  display:flex;
+  flex-direction:column;
+  gap: 16px;
+}
+
+.mobile-contacts__tel{
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--accent-color);
+}
+
+.mobile-contacts__mail{
+  font-size: 18px;
+  color: var(--secondary-text-color);
+}
+
+.mobile-social{
+  margin-top: 40px;
+  display:flex;
+  flex-wrap:wrap;
+  gap: 16px 24px;
+  padding: 0;
+}
+
+/* 768+ мобільне меню взагалі не треба */
+@media screen and (min-width: 768px){
+  .mobile-menu{ display:none; }
+}
