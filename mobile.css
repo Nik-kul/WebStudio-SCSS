@@ -1,1 +1,194 @@
 
+/* =========================
+   RESET
+========================= */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.section {
+  padding: 80px 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 480px;
+  padding: 0 16px;
+  margin: 0 auto;
+}
+
+/* =========================
+   TABLET
+========================= */
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding: 0 24px;
+  }
+}
+
+/* =========================
+   DESKTOP
+========================= */
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+    padding: 0 15px;
+  }
+}
+
+/* =========================
+   HERO (Retina Ready)
+========================= */
+
+.hero {
+  padding: 120px 0;
+  text-align: center;
+  color: #fff;
+
+  background:
+    linear-gradient(rgba(46,47,66,0.7), rgba(46,47,66,0.7)),
+    url("../images/hero/hero-mob-1x.jpg") center/cover no-repeat;
+}
+
+/* MOBILE 2x */
+@media 
+(min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+  .hero {
+    background:
+      linear-gradient(rgba(46,47,66,0.7), rgba(46,47,66,0.7)),
+      url("../images/hero/hero-mob-2x.jpg") center/cover no-repeat;
+  }
+}
+
+/* TABLET */
+@media (min-width: 768px) {
+  .hero {
+    background:
+      linear-gradient(rgba(46,47,66,0.7), rgba(46,47,66,0.7)),
+      url("../images/hero/hero-tab-1x.jpg") center/cover no-repeat;
+  }
+}
+
+/* TABLET 2x */
+@media (min-width: 768px) and 
+((min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx)) {
+  .hero {
+    background:
+      linear-gradient(rgba(46,47,66,0.7), rgba(46,47,66,0.7)),
+      url("../images/hero/hero-tab-2x.jpg") center/cover no-repeat;
+  }
+}
+
+/* DESKTOP */
+@media (min-width: 1200px) {
+  .hero {
+    background:
+      linear-gradient(rgba(46,47,66,0.7), rgba(46,47,66,0.7)),
+      url("../images/hero/hero-desk-1x.jpg") center/cover no-repeat;
+  }
+}
+
+/* DESKTOP 2x */
+@media (min-width: 1200px) and 
+((min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx)) {
+  .hero {
+    background:
+      linear-gradient(rgba(46,47,66,0.7), rgba(46,47,66,0.7)),
+      url("../images/hero/hero-desk-2x.jpg") center/cover no-repeat;
+  }
+}
+
+/* =========================
+   FEATURES GRID
+========================= */
+
+.features-list {
+  display: grid;
+  gap: 30px;
+}
+
+@media (min-width: 768px) {
+  .features-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1200px) {
+  .features-list {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* =========================
+   WHAT DO WE DO GRID
+========================= */
+
+.WhatDoWeDo-section-list {
+  display: grid;
+  gap: 30px;
+}
+
+@media (min-width: 768px) {
+  .WhatDoWeDo-section-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* =========================
+   TEAM GRID
+========================= */
+
+.team-container {
+  display: grid;
+  gap: 30px;
+}
+
+@media (min-width: 768px) {
+  .team-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1200px) {
+  .team-container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* =========================
+   IMAGE FIXES
+========================= */
+
+picture {
+  display: block;
+}
+
+.features-list img,
+.WhatDoWeDo-section-list img,
+.team-container img {
+  width: 100%;
+  border-radius: 6px;
+}
