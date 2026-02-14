@@ -633,7 +633,7 @@ ul {
   position: relative;
   background-image: 
     linear-gradient(rgba(47, 48, 58, 0.6), rgba(47, 48, 58, 0.6)), 
-    url("photo_2025-09-24_20-27-37.jpg"); 
+    url("top-screen desktop.jpg"); 
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1005,3 +1005,4 @@ button,
   border-color: var(--accent-color);
   box-shadow: 0 0 4px rgba(33,150,243,0.6);
 }
+
