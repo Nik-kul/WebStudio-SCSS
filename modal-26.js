@@ -1,44 +1,45 @@
-document.addEventListener("DOMContentLoaded", () => {
-  const openBtns = document.querySelectorAll("[data-modal-open]");
-  const modal = document.querySelector("[data-modal]");
+(() => {
+  const openBtn = document.querySelector("[data-modal-open]");
   const closeBtn = document.querySelector("[data-modal-close]");
-  const form = modal?.querySelector(".modal__form");
+  const backdrop = document.querySelector("[data-modal]");
 
-  console.log("openBtns:", openBtns.length, "modal:", !!modal, "closeBtn:", !!closeBtn, "form:", !!form);
+  if (!openBtn || !closeBtn || !backdrop) return;
 
-  if (!modal || !openBtns.length || !closeBtn) return;
+  const HIDDEN_CLASS = "is-hidden";
 
   const openModal = () => {
-    modal.classList.remove("modal--hidden");
-    document.body.classList.add("no-scroll");
+    backdrop.classList.remove(HIDDEN_CLASS);
+    document.body.style.overflow = "hidden"; // прибрати скрол під модалкою
   };
 
   const closeModal = () => {
-    modal.classList.add("modal--hidden");
-    document.body.classList.remove("no-scroll");
+    backdrop.classList.add(HIDDEN_CLASS);
+    document.body.style.overflow = ""; // повернути скрол
   };
 
-  openBtns.forEach((btn) => btn.addEventListener("click", openModal));
+  openBtn.addEventListener("click", openModal);
   closeBtn.addEventListener("click", closeModal);
 
-  // клік по фону
-  modal.addEventListener("click", (e) => {
-    if (e.target === modal) closeModal();
+  // Закриття по кліку на фон (backdrop)
+  backdrop.addEventListener("click", (e) => {
+    if (e.target === backdrop) closeModal();
   });
 
-  // ESC
-  document.addEventListener("keydown", (e) => {
-    if (e.key === "Escape" && !modal.classList.contains("modal--hidden")) {
+  // Закриття по Esc
+  window.addEventListener("keydown", (e) => {
+    if (e.key === "Escape" && !backdrop.classList.contains(HIDDEN_CLASS)) {
       closeModal();
     }
   });
 
-  // submit
+  // (опційно) щоб форма не перезавантажувала сторінку
+  const form = backdrop.querySelector(".modal-form");
   if (form) {
     form.addEventListener("submit", (e) => {
       e.preventDefault();
+      // тут можеш відправляти дані на сервер / показати "успішно"
       closeModal();
       form.reset();
     });
   }
-});
+})();
