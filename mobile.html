@@ -1,229 +1,83 @@
+
 <!DOCTYPE html>
 <html lang="uk">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>WebStudio</title>
-  <link rel="stylesheet" href="./style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Raleway:wght@700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container header-div">
+      <a href="index.html" class="logo"><span>Web</span>Studio</a>
 
-<!-- HERO -->
-<section class="hero">
-  <div class="container">
-    <h1>Ефективні рішення для вашого бізнесу</h1>
-  </div>
-</section>
+      <!-- Desktop nav -->
+      <nav class="header-nav" aria-label="Головна навігація">
+        <ul class="nav">
+          <li><a class="active" href="https://nik-kul.github.io/WebStudio/">Студія</a></li>
+          <li><a href="https://nik-kul.github.io/Portfolio/">Портфоліо</a></li>
+          <li><a href="#">Контакти</a></li>
+        </ul>
+      </nav>
 
-<!-- FEATURES -->
-<section class="section">
-  <div class="container">
-    <ul class="features-list">
+      <!-- Desktop contacts -->
+      <ul class="hedul header-contacts">
+        <li>
+          <svg class="header-svg-items" width="16" height="12">
+            <use href="./symbol-defs.svg#icon-envelope-hover"></use>
+          </svg>
+          <a class="gmail" href="mailto:info@devstudio.com">info@devstudio.com</a>
+        </li>
+      </ul>
 
-      <!-- 1 -->
-      <li>
-        <picture>
-          <source media="(min-width:1200px)"
-            srcset="
-            ./images/features/attention-desk-1x.jpg 1x,
-            ./images/features/attention-desk-2x.jpg 2x">
-          <source media="(min-width:768px)"
-            srcset="
-            ./images/features/attention-tab-1x.jpg 1x,
-            ./images/features/attention-tab-2x.jpg 2x">
-          <img src="./images/features/attention-mob-1x.jpg"
-            srcset="./images/features/attention-mob-2x.jpg 2x"
-            alt="Увага до деталей"
-            loading="lazy">
-        </picture>
-        <h3>УВАГА ДО ДЕТАЛЕЙ</h3>
-      </li>
+      <ul class="hedul header-contacts">
+        <li>
+          <svg class="header-svg-items" width="16" height="12">
+            <use href="./symbol-defs.svg#icon-Vector"></use>
+          </svg>
+          <a class="tel" href="tel:+380961111111">+38 096 111 11 11</a>
+        </li>
+      </ul>
 
-      <!-- 2 -->
-      <li>
-        <picture>
-          <source media="(min-width:1200px)"
-            srcset="
-            ./images/features/punctuality-desk-1x.jpg 1x,
-            ./images/features/punctuality-desk-2x.jpg 2x">
-          <source media="(min-width:768px)"
-            srcset="
-            ./images/features/punctuality-tab-1x.jpg 1x,
-            ./images/features/punctuality-tab-2x.jpg 2x">
-          <img src="./images/features/punctuality-mob-1x.jpg"
-            srcset="./images/features/punctuality-mob-2x.jpg 2x"
-            alt="Пунктуальність"
-            loading="lazy">
-        </picture>
-        <h3>ПУНКТУАЛЬНІСТЬ</h3>
-      </li>
+      <!-- Mobile burger -->
+      <button class="menu-btn" type="button" aria-label="Відкрити меню" aria-expanded="false" data-menu-open>
+        <span class="menu-btn-lines"></span>
+      </button>
+    </div>
+  </header>
 
-      <!-- 3 -->
-      <li>
-        <picture>
-          <source media="(min-width:1200px)"
-            srcset="
-            ./images/features/planning-desk-1x.jpg 1x,
-            ./images/features/planning-desk-2x.jpg 2x">
-          <source media="(min-width:768px)"
-            srcset="
-            ./images/features/planning-tab-1x.jpg 1x,
-            ./images/features/planning-tab-2x.jpg 2x">
-          <img src="./images/features/planning-mob-1x.jpg"
-            srcset="./images/features/planning-mob-2x.jpg 2x"
-            alt="Планування"
-            loading="lazy">
-        </picture>
-        <h3>ПЛАНУВАННЯ</h3>
-      </li>
+  <!-- Main -->
+  <main>
+    <!-- Тут твій контент сторінки (hero, features, team і т.д.) -->
+  </main>
 
-      <!-- 4 -->
-      <li>
-        <picture>
-          <source media="(min-width:1200px)"
-            srcset="
-            ./images/features/technology-desk-1x.jpg 1x,
-            ./images/features/technology-desk-2x.jpg 2x">
-          <source media="(min-width:768px)"
-            srcset="
-            ./images/features/technology-tab-1x.jpg 1x,
-            ./images/features/technology-tab-2x.jpg 2x">
-          <img src="./images/features/technology-mob-1x.jpg"
-            srcset="./images/features/technology-mob-2x.jpg 2x"
-            alt="Сучасні технології"
-            loading="lazy">
-        </picture>
-        <h3>СУЧАСНІ ТЕХНОЛОГІЇ</h3>
-      </li>
+  <!-- ✅ Mobile menu -->
+  <div class="mobile-menu" data-menu aria-hidden="true">
+    <div class="mobile-menu__panel">
+      <button class="close-circle mobile-menu__close" type="button" aria-label="Закрити меню" data-menu-close></button>
 
-    </ul>
-  </div>
-</section>
+      <ul class="mobile-menu__nav">
+        <li><a href="https://nik-kul.github.io/WebStudio/">Студія</a></li>
+        <li><a href="https://nik-kul.github.io/Portfolio/">Портфоліо</a></li>
+        <li><a href="#">Контакти</a></li>
+      </ul>
 
-<!-- WHAT DO WE DO -->
-<section class="section">
-  <div class="container">
-    <ul class="WhatDoWeDo-section-list">
-
-      <li>
-        <picture>
-          <source media="(min-width:1200px)"
-            srcset="./images/whatwedo/desktop-desk-1x.jpg 1x,
-                    ./images/whatwedo/desktop-desk-2x.jpg 2x">
-          <source media="(min-width:768px)"
-            srcset="./images/whatwedo/desktop-tab-1x.jpg 1x,
-                    ./images/whatwedo/desktop-tab-2x.jpg 2x">
-          <img src="./images/whatwedo/desktop-mob-1x.jpg"
-            srcset="./images/whatwedo/desktop-mob-2x.jpg 2x"
-            alt="Десктопні додатки"
-            loading="lazy">
-        </picture>
-      </li>
-
-      <li>
-        <picture>
-          <source media="(min-width:1200px)"
-            srcset="./images/whatwedo/mobile-desk-1x.jpg 1x,
-                    ./images/whatwedo/mobile-desk-2x.jpg 2x">
-          <source media="(min-width:768px)"
-            srcset="./images/whatwedo/mobile-tab-1x.jpg 1x,
-                    ./images/whatwedo/mobile-tab-2x.jpg 2x">
-          <img src="./images/whatwedo/mobile-mob-1x.jpg"
-            srcset="./images/whatwedo/mobile-mob-2x.jpg 2x"
-            alt="Мобільні додатки"
-            loading="lazy">
-        </picture>
-      </li>
-
-      <li>
-        <picture>
-          <source media="(min-width:1200px)"
-            srcset="./images/whatwedo/design-desk-1x.jpg 1x,
-                    ./images/whatwedo/design-desk-2x.jpg 2x">
-          <source media="(min-width:768px)"
-            srcset="./images/whatwedo/design-tab-1x.jpg 1x,
-                    ./images/whatwedo/design-tab-2x.jpg 2x">
-          <img src="./images/whatwedo/design-mob-1x.jpg"
-            srcset="./images/whatwedo/design-mob-2x.jpg 2x"
-            alt="Дизайнерські рішення"
-            loading="lazy">
-        </picture>
-      </li>
-
-    </ul>
-  </div>
-</section>
-
-<!-- TEAM -->
-<section class="section">
-  <div class="container">
-    <div class="team-container">
-
-      <div>
-        <picture>
-          <source media="(min-width:1200px)"
-            srcset="./images/team/ihor-desk-1x.jpg 1x,
-                    ./images/team/ihor-desk-2x.jpg 2x">
-          <source media="(min-width:768px)"
-            srcset="./images/team/ihor-tab-1x.jpg 1x,
-                    ./images/team/ihor-tab-2x.jpg 2x">
-          <img src="./images/team/ihor-mob-1x.jpg"
-            srcset="./images/team/ihor-mob-2x.jpg 2x"
-            alt="Ігор Дем'яненко"
-            loading="lazy">
-        </picture>
+      <div class="mobile-menu__contacts">
+        <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+        <a href="tel:+380961111111">+38 096 111 11 11</a>
       </div>
-
-      <div>
-        <picture>
-          <source media="(min-width:1200px)"
-            srcset="./images/team/olha-desk-1x.jpg 1x,
-                    ./images/team/olha-desk-2x.jpg 2x">
-          <source media="(min-width:768px)"
-            srcset="./images/team/olha-tab-1x.jpg 1x,
-                    ./images/team/olha-tab-2x.jpg 2x">
-          <img src="./images/team/olha-mob-1x.jpg"
-            srcset="./images/team/olha-mob-2x.jpg 2x"
-            alt="Ольга Рєпіна"
-            loading="lazy">
-        </picture>
-      </div>
-
-      <div>
-        <picture>
-          <source media="(min-width:1200px)"
-            srcset="./images/team/mykola-desk-1x.jpg 1x,
-                    ./images/team/mykola-desk-2x.jpg 2x">
-          <source media="(min-width:768px)"
-            srcset="./images/team/mykola-tab-1x.jpg 1x,
-                    ./images/team/mykola-tab-2x.jpg 2x">
-          <img src="./images/team/mykola-mob-1x.jpg"
-            srcset="./images/team/mykola-mob-2x.jpg 2x"
-            alt="Микола Тарасов"
-            loading="lazy">
-        </picture>
-      </div>
-
-      <div>
-        <picture>
-          <source media="(min-width:1200px)"
-            srcset="./images/team/mykhailo-desk-1x.jpg 1x,
-                    ./images/team/mykhailo-desk-2x.jpg 2x">
-          <source media="(min-width:768px)"
-            srcset="./images/team/mykhailo-tab-1x.jpg 1x,
-                    ./images/team/mykhailo-tab-2x.jpg 2x">
-          <img src="./images/team/mykhailo-mob-1x.jpg"
-            srcset="./images/team/mykhailo-mob-2x.jpg 2x"
-            alt="Михайло Єрмаков"
-            loading="lazy">
-        </picture>
-      </div>
-
     </div>
   </div>
-</section>
 
+  <!-- ✅ JS окремим файлом -->
+  <script src="./js/mobile-menu.js" defer></script>
 </body>
 </html>
-
