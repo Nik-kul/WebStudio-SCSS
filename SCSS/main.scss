@@ -28,11 +28,11 @@
   display: inline-block;
   font-weight: 500;
   color: #212121;
-  padding-bottom: 4px;          /* трохи місця під текстом */
+  padding-bottom: 4px;     
   transition: color .2s ease;
 }
 
-/* синя лінія під пунктом меню */
+
 .nav a::after {
   content: "";
   position: absolute;
@@ -43,12 +43,12 @@
   background: #2196f3;
   border-radius: 2px;
 
-  transform: scaleX(0);         /* схована */
-  transform-origin: center;     /* з центру */
+  transform: scaleX(0);         
+  transform-origin: center;    
   transition: transform .3s ease;
 }
 
-/* колір тексту + поява лінії при наведенні */
+
 .nav a:hover,
 .nav a.active {
   color: #2196f3;
@@ -56,7 +56,7 @@
 
 .nav a:hover::after,
 .nav a.active::after {
-  transform: scaleX(1);         /* лінія виростає з центру */
+  transform: scaleX(1);         
 }
 
 
@@ -91,7 +91,7 @@
   cursor: pointer;
 }
 
-/* Дві палички хрестика */
+
 .close-circle::before,
 .close-circle::after {
   content: "";
@@ -341,7 +341,7 @@ svg {
   pointer-events: none;
 }
 
-/* Модальне вікно з анімацією */
+
 .modal-window {
   background: white;
   padding: 30px;
@@ -349,7 +349,7 @@ svg {
   position: relative;
   width: 480px;
 
-  /* ПОЧАТКОВИЙ СТАН — сховане */
+ 
   transform: scale(0.7);
   opacity: 0;
 
@@ -358,7 +358,7 @@ svg {
     opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* Коли модалка відкрита */
+
 .backdrop:not(.is-hidden) .modal-window {
   transform: scale(1);
   opacity: 1;
@@ -627,8 +627,7 @@ ul {
   border-radius: 50%;
 }
 
-/* Hero */
-/* Hero */
+
 .hero {
   position: relative;
   background-image: 
@@ -959,14 +958,14 @@ button,
     stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* Features icons */
+
 .features-list-li::before {
   transition:
     filter 250ms cubic-bezier(0.4, 0, 0.2, 1),
     opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* Footer соц іконки */
+
 .footer-social li a {
   transition:
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -977,7 +976,7 @@ button,
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* Modal close button крестик */
+
 .close-circle,
 .close-circle::before,
 .close-circle::after {
@@ -986,13 +985,13 @@ button,
     transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* Overlay появлення */
+
 .backdrop {
   transition:
     opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* Inputs */
+
 .modal-form input,
 .modal-form textarea {
   transition:
