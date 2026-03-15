@@ -13,7 +13,79 @@
 </head>
 
 <script src="./js/mobile-menu.js" defer></script>
+<header class="header">
+  <div class="container header-div">
+    <a href="index.html" class="logo"><span>Web</span>Studio</a>
 
+    <nav class="desktop-nav">
+      <ul class="nav">
+        <li><a class="active" href="https://nik-kul.github.io/WebStudio/">Студія</a></li>
+        <li><a href="https://nik-kul.github.io/Portfolio/">Портфоліо</a></li>
+        <li><a href="#">Контакти</a></li>
+      </ul>
+    </nav>
+
+    <div class="header-contacts">
+      <ul class="hedul">
+        <li>
+          <svg class="header-svg-items">
+            <use href="./symbol-defs.svg#icon-envelope-hover"></use>
+          </svg>
+          <a class="gmail" href="mailto:info@devstudio.com">info@devstudio.com</a>
+        </li>
+      </ul>
+
+      <ul class="hedul">
+        <li>
+          <svg class="header-svg-items">
+            <use href="./symbol-defs.svg#icon-Vector"></use>
+          </svg>
+          <a class="tel" href="tel:+380961111111">+38 096 111 11 11</a>
+        </li>
+      </ul>
+    </div>
+
+    <button
+      class="menu-btn"
+      type="button"
+      aria-label="Відкрити меню"
+      aria-expanded="false"
+      data-menu-open
+    >
+      <span class="menu-btn-lines"></span>
+    </button>
+  </div>
+</header>
+
+<!-- Mobile menu -->
+<div class="mobile-menu is-hidden" data-menu>
+  <div class="mobile-menu__panel">
+    <button
+      class="close-circle mobile-menu__close"
+      type="button"
+      aria-label="Закрити меню"
+      data-menu-close
+    ></button>
+
+    <ul class="mobile-menu__nav">
+      <li><a class="mobile-menu__link active" href="https://nik-kul.github.io/WebStudio/">Студія</a></li>
+      <li><a class="mobile-menu__link" href="https://nik-kul.github.io/Portfolio/">Портфоліо</a></li>
+      <li><a class="mobile-menu__link" href="#">Контакти</a></li>
+    </ul>
+
+    <div class="mobile-menu__contacts">
+      <a class="mobile-menu__tel" href="tel:+380961111111">+38 096 111 11 11</a>
+      <a class="mobile-menu__mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
+    </div>
+
+    <ul class="mobile-menu__socials">
+      <li><a href="#">Instagram</a></li>
+      <li><a href="#">Twitter</a></li>
+      <li><a href="#">Facebook</a></li>
+      <li><a href="#">LinkedIn</a></li>
+    </ul>
+  </div>
+</div>
 
   
 <body>
