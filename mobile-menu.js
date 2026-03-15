@@ -1,34 +1,29 @@
 (() => {
-  const openBtn = document.querySelector("[data-menu-open]");
-  const closeBtn = document.querySelector("[data-menu-close]");
-  const menu = document.querySelector("[data-menu]");
-
-  if (!openBtn || !closeBtn || !menu) return;
-
-  const openMenu = () => {
-    menu.classList.add("is-open");
-    menu.setAttribute("aria-hidden", "false");
-    openBtn.setAttribute("aria-expanded", "true");
-    document.body.style.overflow = "hidden";
+  const refs = {
+    openMenuBtn: document.querySelector("[data-menu-open]"),
+    closeMenuBtn: document.querySelector("[data-menu-close]"),
+    menu: document.querySelector("[data-menu]"),
   };
 
-  const closeMenu = () => {
-    menu.classList.remove("is-open");
-    menu.setAttribute("aria-hidden", "true");
-    openBtn.setAttribute("aria-expanded", "false");
-    document.body.style.overflow = "";
+  if (!refs.openMenuBtn || !refs.closeMenuBtn || !refs.menu) return;
+
+  const toggleMenu = () => {
+    const isMenuOpen = refs.openMenuBtn.getAttribute("aria-expanded") === "true";
+
+    refs.openMenuBtn.setAttribute("aria-expanded", !isMenuOpen);
+    refs.menu.classList.toggle("is-hidden");
+
+    document.body.style.overflow = refs.menu.classList.contains("is-hidden")
+      ? ""
+      : "hidden";
   };
 
-  openBtn.addEventListener("click", openMenu);
-  closeBtn.addEventListener("click", closeMenu);
+  refs.openMenuBtn.addEventListener("click", toggleMenu);
+  refs.closeMenuBtn.addEventListener("click", toggleMenu);
 
-
-  menu.addEventListener("click", (e) => {
-    if (e.target === menu) closeMenu();
-  });
-
-  // ESC
-  window.addEventListener("keydown", (e) => {
-    if (e.key === "Escape") closeMenu();
+  refs.menu.addEventListener("click", (event) => {
+    if (event.target === refs.menu) {
+      toggleMenu();
+    }
   });
 })();
