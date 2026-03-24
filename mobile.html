@@ -1,259 +1,56 @@
 <!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mobile menu workshop</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
-      integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="css/styles.css" />
-  </head>
-  <body>
-    <header class="page-header">
-      <div class="container">
-        <button
-          class="menu-toggle js-open-menu"
-          aria-expanded="false"
-          aria-controls="mobile-menu"
-        >
-          <svg
-            width="24"
-            height="24"
-            fill="currentColor"
-            viewBox="0 0 20 20"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              fill-rule="evenodd"
-              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-              clip-rule="evenodd"
-            ></path>
-          </svg>
-        </button>
-
-        <ul class="menu">
-          <li><a href="" class="link">About</a></li>
-          <li><a href="" class="link">Products</a></li>
-          <li><a href="" class="link">Contacts</a></li>
-          <li><a href="" class="link">Career</a></li>
-        </ul>
-      </div>
-    </header>
-
-    <main>
-       <ul class="hedul">
-          <li>
-            <svg class="header-svg-items" width="16" height="12">
-              <use href="./symbol-defs.svg#icon-Vector"></use>
-            </svg>
-            <a class="tel" href="tel:+380961111111">+38 096 111 11 11</a>
-          </li>
-        </ul>
-      </div>
-
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mobile Menu</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="page-header">
+    <div class="container">
+      <!-- Кнопка відкриття -->
       <button
-        class="menu-btn"
-        type="button"
-        aria-label="Відкрити меню"
+        class="menu-toggle js-open-menu"
         aria-expanded="false"
-        data-menu-open
+        aria-controls="mobile-menu"
+        aria-label="Відкрити меню"
       >
-        <span class="menu-btn-lines"></span>
+        ☰
       </button>
+
+      <!-- Звичайне меню для desktop -->
+      <ul class="menu">
+        <li><a href="#" class="link">Студія</a></li>
+        <li><a href="#" class="link">Портфоліо</a></li>
+        <li><a href="#" class="link">Контакти</a></li>
+      </ul>
     </div>
   </header>
 
-  <div class="mobile-menu is-hidden" data-menu>
-    <div class="mobile-menu__panel">
-      <button
-        class="close-circle mobile-menu__close"
-        type="button"
-        aria-label="Закрити меню"
-        data-menu-close
-      ></button>
+  <!-- Мобільне меню -->
+  <div class="menu-container js-menu-container" id="mobile-menu">
+    <button
+      class="menu-toggle js-close-menu"
+      aria-label="Закрити меню"
+    >
+      ✕
+    </button>
 
-      <ul class="mobile-menu__nav">
-        <li><a class="mobile-menu__link active" href="https://nik-kul.github.io/WebStudio/">Студія</a></li>
-        <li><a class="mobile-menu__link" href="https://nik-kul.github.io/Portfolio/">Портфоліо</a></li>
-        <li><a class="mobile-menu__link" href="#">Контакти</a></li>
-      </ul>
-
-      <div class="mobile-menu__contacts">
- <!-- Hero section -->
-  <section class="hero">
-    <div class="container">
-      <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-      <button class="hero-button" data-modal-open >Замовити послугу</button>
-<div class="backdrop is-hidden" data-modal>
-  <div class="modal-window">
-    <button class="close-circle" data-modal-close></button>
-    <br>
-    <h4 class="modal-title" style = "text-align:left; color: black;  white-space: nowrap; font-size: 16px;">Залиште свої дані, ми вам передзвонимо</h2>
-
-    <form class="modal-form">
-      <label>
-        <span style = "color: black; text-align:left;">Ім'я</span>
-        <input type="text" id="name" required />
-      </label>
-
-      <label>
-        <span style = "color: black; text-align:left;">Телефон</span>
-        <input type="tel" id="phone" required />
-      </label>
-
-      <label>
-        <span style = "color: black; text-align:left;">Пошта</span>
-        <input type="email" id="email" required /<svg><use href = "./symbol-defs.svg#icon-email-black-18dp-1"></use></svg>>
-      </label>
-
-      <label>
-        <span style = "color: black; text-align:left;">Коментар</span>
-        <textarea id="comment" placeholder = "Введіть текст"></textarea>
-      </label>
-
-      <section class="regular-customers">
-        <h2 class="regular-customers-h2">Постійні клієнти</h2>
-       <ul class="regular-customers-list">
-
-  <li class="regular-customers-list-items">
-    
-      <svg class="customer first-customer">
-        <use href="./symbol-defs.svg#icon-Client-1"></use>
-      </svg>
-   
-  </li>
-
-  <li class="regular-customers-list-items">
-    
-      <svg class="customer second-customer">
-        <use href="./symbol-defs.svg#icon-Client-2"></use>
-      </svg>
-    
-  </li>
-
-  <li class="regular-customers-list-items">
-    
-      <svg class="customer third-customer">
-        <use href="./symbol-defs.svg#icon-Client-3"></use>
-      </svg>
-    
-  </li>
-
-  <li class="regular-customers-list-items">
-  
-      <svg class="customer fourth-customer">
-        <use href="./symbol-defs.svg#icon-Client-4"></use>
-      </svg>
- 
-  </li>
-
-  <li class="regular-customers-list-items">
-   
-      <svg class="customer fifth-customer">
-        <use href="./symbol-defs.svg#icon-Client-5"></use>
-      </svg>
-
-  </li>
-
-  <li class="regular-customers-list-items">
- 
-      <svg class="customer sixth-customer">
-        <use href="./symbol-defs.svg#icon-Client-6"></use>
-      </svg>
-
-  </li>
-
-</ul>
-      </section>
-    </main>
-  <!-- Footer -->
-<footer class="footer">
-  <div class="container foot">
-
-    <div class="footer-left">
-      <a href="#" class="footer-logo"><span>Web</span>Studio</a>
-
-      <address class="footer-address">
-        <p class="footer-address-item">м. Київ, пр-т Лесі Українки, 26</p>
-        <a class="footer-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
-        <a class="footer-link" href="tel:+380961111111">+38 096 111 11 11</a>
-      </address>
-    </div>
-
-    <div class="footer-right">
-      <h4 class="footer-title">Приєднуйтесь</h4>
-
-    </main>
-
-    <div class="menu-container js-menu-container" id="mobile-menu">
-      <button class="menu-toggle js-close-menu">
-        <svg
-          fill="currentColor"
-          viewBox="0 0 20 20"
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-        >
-          <path
-            fill-rule="evenodd"
-            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-            clip-rule="evenodd"
-          ></path>
-        </svg>
-      </button>
-
-      <ul class="mobile-menu">
-        <li><a href="" class="link">About</a></li>
-        <li><a href="" class="link">Products</a></li>
-        <li><a href="" class="link">Contacts</a></li>
-        <li><a href="" class="link">Career</a></li>
-      </ul>
-    </div>
-    <div class="footer-right">
-      <h4 class="footer-title">Приєднуйтесь</h4>
-
-      <ul class="footer-social">
-        <li>
-          <a href="#">
-            <svg><use href="./symbol-defs.svg#icon-instagram-2-2"></use></svg>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <svg><use href="./symbol-defs.svg#icon-twitter-1"></use></svg>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <svg><use href="./symbol-defs.svg#icon-facebook-1"></use></svg>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <svg><use href="./symbol-defs.svg#icon-linkedin-1"></use></svg>
-          </a>
-        </li>
-        <form class="modal-form">
-        <label>
-        <h4 style = "color: white; text-align:left;  white-space: nowrap; ">Підпишіться на розсилку</h4>
-        <input style = "background-color: rgba(47, 48, 58, 1);" type="email" id="email" required placeholder = "E-mail" />
-      </label>
-      <button type="submit" class="send-btn" style = "display: block;">Підписатися</button>
-      </form>
-      </ul>
-    </div>
+    <ul class="mobile-menu">
+      <li><a href="#" class="link">Студія</a></li>
+      <li><a href="#" class="link">Портфоліо</a></li>
+      <li><a href="#" class="link">Контакти</a></li>
+    </ul>
   </div>
-</footer>
-    <script
-      defer
-      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
-      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
-      crossorigin="anonymous"
-    ></script>
-    <script defer src="js/mobile-menu.js"></script>
-  </body>
+
+  <main class="container">
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
+      magnam sed quos voluptatum.
+    </p>
+  </main>
+
+  <script src="mobile-menu.js"></script>
+</body>
 </html>
