@@ -43,8 +43,8 @@
   background: #2196f3;
   border-radius: 2px;
 
-  transform: scaleX(0);        
-  transform-origin: center;   
+  transform: scaleX(0);         
+  transform-origin: center;    
   transition: transform .3s ease;
 }
 
@@ -56,7 +56,7 @@
 
 .nav a:hover::after,
 .nav a.active::after {
-  transform: scaleX(1);         
+  transform: scaleX(1);        
 }
 
 
@@ -243,7 +243,7 @@ textarea {
   gap: 20px;
   list-style: none;
   padding: 0;
-
+  margin: 0;
 }
 
 .social-list li a {
@@ -286,6 +286,7 @@ svg {
   margin-left: auto;
   margin-right: auto;
 }
+
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -323,7 +324,7 @@ svg {
   transition: fill 0.3s ease;
 }
 
-
+/* Бекдроп */
 .backdrop {
   position: fixed;
   inset: 0;
@@ -341,7 +342,7 @@ svg {
   pointer-events: none;
 }
 
-
+/* Модальне вікно з анімацією */
 .modal-window {
   background: white;
   padding: 30px;
@@ -349,7 +350,7 @@ svg {
   position: relative;
   width: 480px;
 
-
+  /* ПОЧАТКОВИЙ СТАН — сховане */
   transform: scale(0.7);
   opacity: 0;
 
@@ -358,7 +359,7 @@ svg {
     opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-
+/* Коли модалка відкрита */
 .backdrop:not(.is-hidden) .modal-window {
   transform: scale(1);
   opacity: 1;
@@ -400,22 +401,23 @@ svg {
   margin-bottom: 15px;
   font-size: 14px;
   gap: 5px;
-
+}
 
 .modal-form input,
 .modal-form textarea {
   padding: 10px 14px;
   border: 1px solid #ccc;
   border-radius: 6px;
-  }
+  font-size: 14px;
+}
 
-.check {}
-
- display: flex;
+.check {
+  display: flex;
   align-items: center;
   gap: 8px;
   margin-bottom: 20px;
 }
+
 .submit-btn {
   width: 100%;
   background: #2196f3;
@@ -438,7 +440,8 @@ svg {
   fill: #2196F3;
 }
 
-.hedul li:hover a { color: #2196F3;
+.hedul li:hover a {
+  color: #2196F3;
 }
 .header-svg-items {
     width: 16px; 
@@ -473,7 +476,11 @@ a {
   text-decoration: none;
   color: inherit;
 }
-ul {.WhatDoWeDo-section-container {
+ul {
+  list-style: none;
+}
+
+.WhatDoWeDo-section-container {
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -577,20 +584,26 @@ ul {.WhatDoWeDo-section-container {
 
 .contacts {
   display: flex;               
-  gap: 40px;  font-size: 14px;
+  gap: 40px;
+  font-size: 14px;
   color: var(--secondary-text-color);
 }
 
-.features-list {display: flex;
+.features-list {
+  display: flex;
   justify-content: space-between; 
   gap: 30px;
   list-style: none;
   padding: 0;
-  margin: 0;}
+  margin: 0;
+}
 
 .features-list-li {
   flex: 1; 
-  text-align: center;}
+  text-align: center;
+}
+
+
 
 .team-container {
   display: flex;
@@ -609,29 +622,34 @@ ul {.WhatDoWeDo-section-container {
   border-radius: 10px;
 }
 
-.team-member img { width: 100%;
+.team-member img {
+  width: 100%;
   height: auto;
   border-radius: 50%;
 }
 
-/* Hero */
+
 /* Hero */
 .hero {
   position: relative;
   background-image: 
     linear-gradient(rgba(47, 48, 58, 0.6), rgba(47, 48, 58, 0.6)), 
-    url("top-screendesktop.jpg"); 
+    url("photo_2025-09-24_20-27-37.jpg"); 
   background-size: cover;
-  background-position: center; background-repeat: no-repeat;
+  background-position: center;
+  background-repeat: no-repeat;
   text-align: center;
   padding: 200px 0;
-      color: #fff; }
+  color: #fff;
+}
 
 .regular-customers-list-items {
     width: 170px;
     height: 92px;
     border: 1px solid rgba(175, 177, 184, 1);
-    border-radius: 5px;display: flex;
+    border-radius: 5px;
+
+    display: flex;
     justify-content: center;
     align-items: center;
 
@@ -653,7 +671,8 @@ ul {.WhatDoWeDo-section-container {
   border-radius: 5px;
     max-width: 1170px;
     min-height: 184px;
-    margin: 100px auto;text-align: center;
+    margin: 100px auto;
+    text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -918,7 +937,7 @@ button,
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-
+/* Клієнти (логотипи) */
 .regular-customers-list-items {
   transition:
     border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -929,7 +948,7 @@ button,
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-
+/* Команда – соц. мережі */
 .social-list li a {
   transition:
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -959,7 +978,7 @@ button,
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-
+/* Modal close button крестик */
 .close-circle,
 .close-circle::before,
 .close-circle::after {
@@ -968,13 +987,13 @@ button,
     transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-
+/* Overlay появлення */
 .backdrop {
   transition:
     opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-
+/* Inputs */
 .modal-form input,
 .modal-form textarea {
   transition:
