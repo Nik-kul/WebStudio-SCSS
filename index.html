@@ -13,50 +13,46 @@
 </head>
 <body>
   <!-- Header -->
-  <header class="header">
-    <div class="container header-div">
-      <a href="index.html" class="logo"><span>Web</span>Studio</a>
+<header class="header">
+  <div class="container header-inner">
+    <a href="./index.html" class="logo">Web<span>Studio</span></a>
 
-      <nav>
-        <ul class="nav">
-          <li><a  class="active" href="https://nik-kul.github.io/WebStudio/">Студія</a></li>
-          <li><a href="https://nik-kul.github.io/Portfolio/">Портфоліо</a></li>
-          <li><a href="#">Контакти</a></li>
-        </ul>
-      </nav>
-        
-      <ul class = "hedul">
-        <li> <svg class = "headul header-svg-items"><use href = "./symbol-defs.svg#icon-envelope-hover"></use></svg> <a class="gmail" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-      </ul>
-      <ul class = "hedul">
-        <li> <svg class = "headul header-svg-items"><use href = "./symbol-defs.svg#icon-Vector"></use></svg><a class="tel" href="tel:+380961111111">+38 096 111 11 11</a></li>
-      </ul>
-    </div>
-      <div class="container header-div">
-   
+    <nav class="site-nav">
+      <a href="./index.html" class="current">Студія</a>
+      <a href="./portfolio.html">Портфоліо</a>
+      <a href="#contacts">Контакти</a>
+    </nav>
 
+    <ul class="contacts-list">
+      <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+      <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
+    </ul>
 
-
-<div class="header-inner">
-  <a href="#" class="logo">Web<span>Studio</span></a>
-
-  <!-- десктоп меню -->
-  <nav class="nav">
-    <a href="#">Студія</a>
-    <a href="#">Портфоліо</a>
-    <a href="#">Контакти</a>
-  </nav>
-
-  <div class="contacts">
-    <a href="mailto:info@devstudio.com">info@devstudio.com</a>
-    <a href="tel:+380961111111">+38 096 111 11 11</a>
+    <button class="menu-toggle" type="button" data-menu-open>
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
   </div>
 
-  <!-- бургер В КІНЦІ -->
-  <button class="menu-btn" data-menu-open>☰</button>
-</div>
-  </header>
-  
+  <!-- мобільне меню -->
+  <div class="mobile-menu is-hidden" data-menu>
+    <div class="mobile-menu-container">
+      <button class="menu-close" type="button" data-menu-close">&times;</button>
+
+      <nav class="mobile-nav">
+        <a href="./index.html" class="current">Студія</a>
+        <a href="./portfolio.html">Портфоліо</a>
+        <a href="#contacts">Контакти</a>
+      </nav>
+
+      <div class="mobile-contacts">
+        <a href="tel:+380961111111">+38 096 111 11 11</a>
+        <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+      </div>
+    </div>
+  </div>
+</header>
 
   <!-- Hero section -->
   <section class="hero">
