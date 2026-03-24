@@ -7,32 +7,57 @@
   <link rel="stylesheet" href="mobile.css" />
 </head>
 <body>
-  <header class="page-header">
-    <div class="container">
-      <!-- desktop menu -->
+<header class="page-header">
+  <div class="container">
+    <a href="./index.html" class="logo">
+      <span>Web</span>Studio
+    </a>
+
+    <nav class="desktop-nav">
       <ul class="menu">
-        <li><a class="link" href="">Studio</a></li>
-        <li><a class="link" href="">Portfolio</a></li>
-        <li><a class="link" href="">Contacts</a></li>
+        <li><a href="" class="link current">Студія</a></li>
+        <li><a href="" class="link">Портфоліо</a></li>
+        <li><a href="" class="link">Контакти</a></li>
       </ul>
+    </nav>
 
-      <!-- mobile open button -->
-      <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
-        ☰
-      </button>
-    </div>
-  </header>
-
-  <!-- mobile menu -->
-  <div class="menu-container js-menu-container" id="mobile-menu">
-    <button class="menu-toggle js-close-menu">✕</button>
-
-    <ul class="mobile-menu">
-      <li><a class="link" href="">Studio</a></li>
-      <li><a class="link" href="">Portfolio</a></li>
-      <li><a class="link" href="">Contacts</a></li>
+    <ul class="contacts desktop-contacts">
+      <li><a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a></li>
+      <li><a href="tel:+380961111111" class="link">+38 096 111 11 11</a></li>
     </ul>
+
+    <button
+      type="button"
+      class="menu-toggle js-open-menu"
+      aria-expanded="false"
+      aria-controls="mobile-menu"
+      aria-label="Відкрити меню"
+    >
+      ☰
+    </button>
   </div>
+</header>
+
+<div class="menu-container js-menu-container" id="mobile-menu">
+  <button
+    type="button"
+    class="menu-toggle js-close-menu"
+    aria-label="Закрити меню"
+  >
+    ✕
+  </button>
+
+  <ul class="mobile-menu">
+    <li><a href="" class="mobile-link current">Студія</a></li>
+    <li><a href="" class="mobile-link">Портфоліо</a></li>
+    <li><a href="" class="mobile-link">Контакти</a></li>
+  </ul>
+
+  <ul class="mobile-contacts">
+    <li><a href="tel:+380961111111" class="mobile-phone">+38 096 111 11 11</a></li>
+    <li><a href="mailto:info@devstudio.com" class="mobile-mail">info@devstudio.com</a></li>
+  </ul>
+</div>
 
   <div class="container">
     <p>
