@@ -1,41 +1,51 @@
 <!DOCTYPE html>
-<html lang="uk">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>WebStudio</title>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mobile menu workshop</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+      integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header class="page-header">
+      <div class="container">
+        <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg
+            width="24"
+            height="24"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+              clip-rule="evenodd"
+            ></path>
+          </svg>
+        </button>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Raleway:wght@700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="mobile.css" />
-  <script src="./js/mobile-menu.js" defer></script>
-</head>
-<body>
-
-  <header class="header">
-    <div class="container header-div">
-      <a href="index.html" class="logo"><span>Web</span>Studio</a>
-
-      <nav class="desktop-nav">
-        <ul class="nav">
-          <li><a class="active" href="https://nik-kul.github.io/WebStudio/">Студія</a></li>
-          <li><a href="https://nik-kul.github.io/Portfolio/">Портфоліо</a></li>
-          <li><a href="#">Контакти</a></li>
+        <ul class="menu">
+          <li><a href="" class="link">About</a></li>
+          <li><a href="" class="link">Products</a></li>
+          <li><a href="" class="link">Contacts</a></li>
+          <li><a href="" class="link">Career</a></li>
         </ul>
-      </nav>
+      </div>
+    </header>
 
-      <div class="header-contacts">
-        <ul class="hedul">
-          <li>
-            <svg class="header-svg-items" width="16" height="12">
-              <use href="./symbol-defs.svg#icon-envelope-hover"></use>
-            </svg>
-            <a class="gmail" href="mailto:info@devstudio.com">info@devstudio.com</a>
-          </li>
-        </ul>
-
-        <ul class="hedul">
+    <main>
+       <ul class="hedul">
           <li>
             <svg class="header-svg-items" width="16" height="12">
               <use href="./symbol-defs.svg#icon-Vector"></use>
@@ -73,18 +83,6 @@
       </ul>
 
       <div class="mobile-menu__contacts">
-        <a class="mobile-menu__tel" href="tel:+380961111111">+38 096 111 11 11</a>
-        <a class="mobile-menu__mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
-      </div>
-
-      <ul class="mobile-menu__socials">
-        <li><a href="#">Instagram</a></li>
-        <li><a href="#">Twitter</a></li>
-        <li><a href="#">Facebook</a></li>
-        <li><a href="#">LinkedIn</a></li>
-      </ul>
-    </div>
-  </div>
  <!-- Hero section -->
   <section class="hero">
     <div class="container">
@@ -189,6 +187,35 @@
     <div class="footer-right">
       <h4 class="footer-title">Приєднуйтесь</h4>
 
+    </main>
+
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg
+          fill="currentColor"
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </button>
+
+      <ul class="mobile-menu">
+        <li><a href="" class="link">About</a></li>
+        <li><a href="" class="link">Products</a></li>
+        <li><a href="" class="link">Contacts</a></li>
+        <li><a href="" class="link">Career</a></li>
+      </ul>
+    </div>
+    <div class="footer-right">
+      <h4 class="footer-title">Приєднуйтесь</h4>
+
       <ul class="footer-social">
         <li>
           <a href="#">
@@ -221,6 +248,12 @@
     </div>
   </div>
 </footer>
-
-</body>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
+  </body>
 </html>
