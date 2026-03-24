@@ -92,194 +92,6 @@
 }
 
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-  font-family: Roboto, sans-serif;
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
-ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.container {
-  width: 100%;
-  max-width: 1200px;
-  padding: 0 15px;
-  margin: 0 auto;
-}
-
-.header {
-  border-bottom: 1px solid #ececec;
-  background-color: #fff;
-}
-
-.header-inner {
-  display: flex;
-  align-items: center;
-  min-height: 80px;
-}
-
-.logo {
-  font-family: Raleway, sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  color: #000;
-}
-
-.logo span {
-  color: #2196f3;
-}
-
-.site-nav {
-  display: flex;
-  gap: 50px;
-  margin-left: 93px;
-}
-
-.site-nav a {
-  font-weight: 500;
-  font-size: 14px;
-  color: #212121;
-  padding: 32px 0;
-}
-
-.site-nav a.current {
-  color: #2196f3;
-}
-
-.contacts-list {
-  display: flex;
-  gap: 30px;
-  margin-left: auto;
-}
-
-.contacts-list a {
-  font-weight: 500;
-  font-size: 14px;
-  color: #757575;
-}
-
-.menu-toggle {
-  display: none;
-  margin-left: auto;
-  width: 40px;
-  height: 40px;
-  border: none;
-  background: transparent;
-  padding: 0;
-  cursor: pointer;
-  flex-direction: column;
-  justify-content: center;
-  gap: 5px;
-}
-
-.menu-toggle span {
-  display: block;
-  width: 24px;
-  height: 3px;
-  background-color: #212121;
-  margin: 0 auto;
-  border-radius: 2px;
-}
-
-.mobile-menu {
-  position: fixed;
-  top: 0;
-  right: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.4);
-  z-index: 999;
-}
-
-.mobile-menu.is-hidden {
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
-}
-
-.mobile-menu-container {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 280px;
-  height: 100%;
-  background-color: #fff;
-  padding: 20px;
-}
-
-.menu-close {
-  display: block;
-  margin-left: auto;
-  border: none;
-  background: transparent;
-  font-size: 32px;
-  cursor: pointer;
-}
-
-.mobile-nav {
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-  margin-top: 30px;
-}
-
-.mobile-nav a {
-  font-size: 24px;
-  font-weight: 500;
-  color: #212121;
-}
-
-.mobile-nav a.current {
-  color: #2196f3;
-}
-
-.mobile-contacts {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-  margin-top: 40px;
-}
-
-.mobile-contacts a {
-  font-size: 18px;
-  color: #757575;
-}
-
-/* планшет і телефон */
-@media (max-width: 767px) {
-  .header-inner {
-    min-height: 60px;
-  }
-
-  .site-nav,
-  .contacts-list {
-    display: none;
-  }
-
-  .menu-toggle {
-    display: flex;
-  }
-
-  .logo {
-    font-size: 24px;
-  }
-}
-
-
 .close-circle::before,
 .close-circle::after {
   content: "";
@@ -1195,89 +1007,190 @@ button,
   box-shadow: 0 0 4px rgba(33,150,243,0.6);
 }
 
-.menu-btn {
-  font-size: 28px;
-  background: none;
-  border: none;
-  cursor: pointer;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
-/* меню */
+body {
+  margin: 0;
+  font-family: Roboto, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.header {
+  border-bottom: 1px solid #ececec;
+  background-color: #fff;
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  min-height: 80px;
+}
+
+.logo {
+  font-family: Raleway, sans-serif;
+  font-size: 26px;
+  font-weight: 700;
+  color: #000;
+}
+
+.logo span {
+  color: #2196f3;
+}
+
+.site-nav {
+  display: flex;
+  gap: 50px;
+  margin-left: 93px;
+}
+
+.site-nav a {
+  font-weight: 500;
+  font-size: 14px;
+  color: #212121;
+  padding: 32px 0;
+}
+
+.site-nav a.current {
+  color: #2196f3;
+}
+
+.contacts-list {
+  display: flex;
+  gap: 30px;
+  margin-left: auto;
+}
+
+.contacts-list a {
+  font-weight: 500;
+  font-size: 14px;
+  color: #757575;
+}
+
+.menu-toggle {
+  display: none;
+  margin-left: auto;
+  width: 40px;
+  height: 40px;
+  border: none;
+  background: transparent;
+  padding: 0;
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+}
+
+.menu-toggle span {
+  display: block;
+  width: 24px;
+  height: 3px;
+  background-color: #212121;
+  border-radius: 2px;
+  margin: 0 auto;
+}
+
 .mobile-menu {
   position: fixed;
-  top: 0;
-  right: 0;
-  width: 260px;
-  height: 100%;
-  background: #fff;
-  padding: 20px;
-  box-shadow: -2px 0 10px rgba(0,0,0,0.2);
-  transform: translateX(0);
-  transition: 0.3s;
-  z-index: 1000;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 999;
 }
 
 .mobile-menu.is-hidden {
-  transform: translateX(100%);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
 }
 
-.close-btn {
-  font-size: 28px;
-  background: none;
-  border: none;
-  cursor: pointer;
+.mobile-menu-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 280px;
+  height: 100%;
+  background-color: #fff;
+  padding: 20px;
+}
+
+.menu-close {
   display: block;
   margin-left: auto;
+  background: transparent;
+  border: none;
+  font-size: 32px;
+  cursor: pointer;
 }
 
 .mobile-nav {
   display: flex;
   flex-direction: column;
-  gap: 20px;
-  margin-top: 40px;
+  gap: 24px;
+  margin-top: 30px;
 }
 
 .mobile-nav a {
-  font-size: 20px;
+  font-size: 24px;
+  font-weight: 500;
   color: #212121;
-  text-decoration: none;
+}
+
+.mobile-nav a.current {
+  color: #2196f3;
 }
 
 .mobile-contacts {
-  margin-top: 40px;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 16px;
+  margin-top: 40px;
 }
 
-
-
-.header-inner {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+.mobile-contacts a {
+  font-size: 18px;
+  color: #757575;
 }
 
-/* бургер вправо */
-.menu-btn {
-  margin-left: auto;
-  font-size: 28px;
-  background: none;
-  border: none;
-  cursor: pointer;
+/* телефон + планшет */
+@media (max-width: 1199px) {
+  .site-nav,
+  .contacts-list {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: flex;
+  }
+
+  .header-inner {
+    min-height: 60px;
+  }
 }
 
-
-@media (min-width: 768px) {
-  .menu-btn {
+/* комп'ютер */
+@media (min-width: 1200px) {
+  .mobile-menu {
     display: none;
   }
 }
 
-
-@media (max-width: 767px) {
-  .nav,
-  .contacts {
-    display: none;
-  }
-}
