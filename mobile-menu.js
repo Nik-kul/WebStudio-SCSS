@@ -10,6 +10,8 @@
 
     const isOpen = menuContainer.classList.contains("is-open");
     openMenuBtn.setAttribute("aria-expanded", isOpen);
+
+    document.body.style.overflow = isOpen ? "hidden" : "";
   };
 
   openMenuBtn.addEventListener("click", toggleMenu);
