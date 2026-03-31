@@ -1,0 +1,21 @@
+.features-list {
+  display: flex;
+  gap: 30px;
+}
+
+.features-list-li {
+  flex: 1;
+  padding-top: 120px;
+  position: relative;
+}
+
+.feature-title {
+  font-weight: 700;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.feature-text {
+  color: #757575;
+  font-size: 14px;
+}
