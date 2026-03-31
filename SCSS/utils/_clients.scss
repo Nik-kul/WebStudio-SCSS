@@ -1,0 +1,17 @@
+.regular-customers {
+  text-align: center;
+}
+
+.regular-customers-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.regular-customers-list-items {
+  width: 170px;
+  height: 92px;
+  border: 1px solid rgba(175, 177, 184, 1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
