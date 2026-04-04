@@ -1,0 +1,62 @@
+@charset "UTF-8";
+:root {
+  --accent-color: #2196F3;
+  --primary-text-color: #212121;
+  --secondary-text-color: #757575;
+  --light-bg-color: #F5F4FA;
+  --white-color: #FFFFFF;
+  --black-color: #000000;
+  --footer-bg-color: #2F303A;
+  --footer-text-color: rgba(255, 255, 255, 0.6);
+  --footer-icon-bg: rgba(255, 255, 255, 0.1);
+  --hover-color: #188CE8;
+}
+
+/* Центрування flex */
+/* Список без маркерів */
+/* Посилання без підкреслення */
+/* Секції */
+/* Картки (team, features тощо) */
+/* Кнопка (базова) */
+/* Overlay (modal backdrop) */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, sans-serif;
+  color: #212121;
+  background-color: #fff;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.regular-customers {
+  text-align: center;
+}
+
+.regular-customers-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.regular-customers-list-items {
+  width: 170px;
+  height: 92px;
+  border: 1px solid rgb(175, 177, 184);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}/*# sourceMappingURL=main.css.map */
